@@ -1,0 +1,11 @@
+<map id="testingEnvironmentApp.Services.BusinessServices.ChannelFactory" name="testingEnvironmentApp.Services.BusinessServices.ChannelFactory">
+<area shape="rect" id="Node000001" title=" " alt="" coords="231,401,441,631"/>
+<area shape="rect" id="Node000002" href="$interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory.html" title=" " alt="" coords="5,145,205,337"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,347,242,400,238,403,193,350"/>
+<area shape="rect" id="Node000003" href="$interfacetesting_environment_app_1_1_services_1_1_public_subscribe_service_1_1_interfaces_1_1_i_event_bus.html" title=" " alt="" coords="229,180,443,303"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="339,302,339,384,333,384,333,302"/>
+<area shape="rect" id="Node000004" href="$classtesting_environment_app_1_1_services_1_1_message_helper_1_1_message_helper.html" title=" " alt="" coords="467,188,669,295"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="526,296,446,390,442,387,522,293"/>
+<area shape="rect" id="Node000005" href="$interfacetesting_environment_app_1_1_services_1_1_message_helper_1_1_interfaces_1_1_i_message_helper.html" title=" " alt="" coords="482,5,654,96"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="571,111,571,188,565,188,565,111"/>
+</map>

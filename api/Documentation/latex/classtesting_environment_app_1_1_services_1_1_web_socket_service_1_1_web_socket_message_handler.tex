@@ -1,0 +1,137 @@
+\doxysection{testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Handler Class Reference}
+\hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler}{}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler}\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}}
+
+
+Inheritance diagram for testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_af6711f33083f4db47df935344bb38db8}{Web\+Socket\+Message\+Handler}} (\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes8dbc3a2adaf867707d201e1f85e36179}{IMessage\+Queue\+Value\+Device\+For\+Web\+Socket\+Device}} message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device)
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_addebd0b4f2f27a073b6ad9ed6e3d7fcd}{Start\+Task}} (Web\+Socket web\+Socket)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_aa631ec8461eac0cf04a14cfae1805595}{Handle\+Message\+Async}} (Web\+Socket web\+Socket)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_a363b886d9a1138589358a88a6b32a864}{Change\+Currently\+Selected\+System}} (string name\+Of\+System)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_ad67dd4042c15d2ddde2239e805fca62b}{Receive\+Messages\+Async}} (Web\+Socket web\+Socket)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_aef1ff77d1018832794441b427f3da0f7}{Process\+And\+Send\+Data\+Async}} (Web\+Socket web\+Socket, Cancellation\+Token cancellation\+Token)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_afcb7b27a5d306e2fcc82ed9f74b6e20f}{Send\+Message\+Async}} (Web\+Socket web\+Socket, string message1)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes8dbc3a2adaf867707d201e1f85e36179}{IMessage\+Queue\+Value\+Device\+For\+Web\+Socket\+Device}} \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_a6f94c49671720c939a54847c46fd8456}{\+\_\+message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device}}
+\item 
+Cancellation\+Token\+Source \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_a8e4326af3c957ac47cecc59a76f2af3e}{\+\_\+cts\+To\+Process\+And\+Send\+Data\+Async}}
+\item 
+Cancellation\+Token\+Source \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_a334f75b0cc67fd31db072cb3198dbf38}{\+\_\+cts\+To\+Receive\+Messages\+Async}}
+\item 
+readonly object \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_a69a0e7dd34b7151e83295b69cd0563bc}{\+\_\+change\+Message\+Queue\+Lock}} = new object()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_af6711f33083f4db47df935344bb38db8}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_af6711f33083f4db47df935344bb38db8} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}!WebSocketMessageHandler@{WebSocketMessageHandler}}
+\index{WebSocketMessageHandler@{WebSocketMessageHandler}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}}
+\doxysubsubsection{\texorpdfstring{WebSocketMessageHandler()}{WebSocketMessageHandler()}}
+{\footnotesize\ttfamily testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Handler.\+Web\+Socket\+Message\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes8dbc3a2adaf867707d201e1f85e36179}{IMessage\+Queue\+Value\+Device\+For\+Web\+Socket\+Device}}}]{message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_a363b886d9a1138589358a88a6b32a864}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_a363b886d9a1138589358a88a6b32a864} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}!ChangeCurrentlySelectedSystem@{ChangeCurrentlySelectedSystem}}
+\index{ChangeCurrentlySelectedSystem@{ChangeCurrentlySelectedSystem}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}}
+\doxysubsubsection{\texorpdfstring{ChangeCurrentlySelectedSystem()}{ChangeCurrentlySelectedSystem()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Handler.\+Change\+Currently\+Selected\+System (\begin{DoxyParamCaption}\item[{string}]{name\+Of\+System }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_aa631ec8461eac0cf04a14cfae1805595}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_aa631ec8461eac0cf04a14cfae1805595} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}!HandleMessageAsync@{HandleMessageAsync}}
+\index{HandleMessageAsync@{HandleMessageAsync}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}}
+\doxysubsubsection{\texorpdfstring{HandleMessageAsync()}{HandleMessageAsync()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Handler.\+Handle\+Message\+Async (\begin{DoxyParamCaption}\item[{Web\+Socket}]{web\+Socket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_web_socket_service_1_1_interfaces_1_1_i_web_socket_message_handler_a90f5fd0791b21fe9877a4d0be3baf43c}{testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Interfaces.\+IWeb\+Socket\+Message\+Handler}}.
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_aef1ff77d1018832794441b427f3da0f7}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_aef1ff77d1018832794441b427f3da0f7} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}!ProcessAndSendDataAsync@{ProcessAndSendDataAsync}}
+\index{ProcessAndSendDataAsync@{ProcessAndSendDataAsync}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}}
+\doxysubsubsection{\texorpdfstring{ProcessAndSendDataAsync()}{ProcessAndSendDataAsync()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Handler.\+Process\+And\+Send\+Data\+Async (\begin{DoxyParamCaption}\item[{Web\+Socket}]{web\+Socket,  }\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_ad67dd4042c15d2ddde2239e805fca62b}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_ad67dd4042c15d2ddde2239e805fca62b} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}!ReceiveMessagesAsync@{ReceiveMessagesAsync}}
+\index{ReceiveMessagesAsync@{ReceiveMessagesAsync}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}}
+\doxysubsubsection{\texorpdfstring{ReceiveMessagesAsync()}{ReceiveMessagesAsync()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Handler.\+Receive\+Messages\+Async (\begin{DoxyParamCaption}\item[{Web\+Socket}]{web\+Socket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_afcb7b27a5d306e2fcc82ed9f74b6e20f}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_afcb7b27a5d306e2fcc82ed9f74b6e20f} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}!SendMessageAsync@{SendMessageAsync}}
+\index{SendMessageAsync@{SendMessageAsync}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}}
+\doxysubsubsection{\texorpdfstring{SendMessageAsync()}{SendMessageAsync()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Handler.\+Send\+Message\+Async (\begin{DoxyParamCaption}\item[{Web\+Socket}]{web\+Socket,  }\item[{string}]{message1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_addebd0b4f2f27a073b6ad9ed6e3d7fcd}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_addebd0b4f2f27a073b6ad9ed6e3d7fcd} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}!StartTask@{StartTask}}
+\index{StartTask@{StartTask}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}}
+\doxysubsubsection{\texorpdfstring{StartTask()}{StartTask()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Handler.\+Start\+Task (\begin{DoxyParamCaption}\item[{Web\+Socket}]{web\+Socket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_a69a0e7dd34b7151e83295b69cd0563bc}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_a69a0e7dd34b7151e83295b69cd0563bc} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}!\_changeMessageQueueLock@{\_changeMessageQueueLock}}
+\index{\_changeMessageQueueLock@{\_changeMessageQueueLock}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}}
+\doxysubsubsection{\texorpdfstring{\_changeMessageQueueLock}{\_changeMessageQueueLock}}
+{\footnotesize\ttfamily readonly object testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Handler.\+\_\+change\+Message\+Queue\+Lock = new object()\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_a8e4326af3c957ac47cecc59a76f2af3e}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_a8e4326af3c957ac47cecc59a76f2af3e} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}!\_ctsToProcessAndSendDataAsync@{\_ctsToProcessAndSendDataAsync}}
+\index{\_ctsToProcessAndSendDataAsync@{\_ctsToProcessAndSendDataAsync}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}}
+\doxysubsubsection{\texorpdfstring{\_ctsToProcessAndSendDataAsync}{\_ctsToProcessAndSendDataAsync}}
+{\footnotesize\ttfamily Cancellation\+Token\+Source testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Handler.\+\_\+cts\+To\+Process\+And\+Send\+Data\+Async\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_a334f75b0cc67fd31db072cb3198dbf38}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_a334f75b0cc67fd31db072cb3198dbf38} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}!\_ctsToReceiveMessagesAsync@{\_ctsToReceiveMessagesAsync}}
+\index{\_ctsToReceiveMessagesAsync@{\_ctsToReceiveMessagesAsync}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}}
+\doxysubsubsection{\texorpdfstring{\_ctsToReceiveMessagesAsync}{\_ctsToReceiveMessagesAsync}}
+{\footnotesize\ttfamily Cancellation\+Token\+Source testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Handler.\+\_\+cts\+To\+Receive\+Messages\+Async\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_a6f94c49671720c939a54847c46fd8456}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler_a6f94c49671720c939a54847c46fd8456} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}!\_messageQueueValueDeviceForWebSocketDevice@{\_messageQueueValueDeviceForWebSocketDevice}}
+\index{\_messageQueueValueDeviceForWebSocketDevice@{\_messageQueueValueDeviceForWebSocketDevice}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageHandler}}
+\doxysubsubsection{\texorpdfstring{\_messageQueueValueDeviceForWebSocketDevice}{\_messageQueueValueDeviceForWebSocketDevice}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes8dbc3a2adaf867707d201e1f85e36179}{IMessage\+Queue\+Value\+Device\+For\+Web\+Socket\+Device}} testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Handler.\+\_\+message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+testing\+Environment\+App/\+Services/\+Web\+Socket\+Service/\mbox{\hyperlink{_web_socket_message_handler_8cs}{Web\+Socket\+Message\+Handler.\+cs}}\end{DoxyCompactItemize}

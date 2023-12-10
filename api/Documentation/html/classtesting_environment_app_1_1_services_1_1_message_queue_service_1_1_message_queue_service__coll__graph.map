@@ -1,0 +1,5 @@
+<map id="testingEnvironmentApp.Services.MessageQueueService.MessageQueueService" name="testingEnvironmentApp.Services.MessageQueueService.MessageQueueService">
+<area shape="rect" id="Node000001" title="Abstrakcyjna klasa bazowa dla usług kolejki wiadomości. Zapewnia podstawową implementację operacji na..." alt="" coords="5,208,288,421"/>
+<area shape="rect" id="Node000002" href="$interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service.html" title="Interfejs dla usługi kolejki wiadomości. Definiuje podstawowe operacje na kolejce,..." alt="" coords="71,5,222,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,175,149,208,144,208,144,175"/>
+</map>

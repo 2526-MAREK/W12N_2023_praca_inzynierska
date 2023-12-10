@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['findbadstatusalarmandchangetookstatusindatabase_0',['findbadstatusalarmandchangetookstatusindatabase',['../classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service.html#a5fe93d3a98e27f390a68f604e5fb7c3e',1,'testingEnvironmentApp.Services.BusinessServices.AlarmService.FindBadStatusAlarmAndChangeToOkStatusInDataBase()'],['../interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_alarm_service.html#a3700fd596bb183235642347d67bd318e',1,'testingEnvironmentApp.Services.BusinessServices.Interfaces.IAlarmService.FindBadStatusAlarmAndChangeToOkStatusInDataBase()']]]
+];

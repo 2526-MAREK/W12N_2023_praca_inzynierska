@@ -1,0 +1,16 @@
+<map id="testingEnvironmentApp.Services.ManagerService.ChannelManager" name="testingEnvironmentApp.Services.ManagerService.ChannelManager">
+<area shape="rect" id="Node000001" title=" " alt="" coords="425,519,635,807"/>
+<area shape="rect" id="Node000002" href="$interfacetesting_environment_app_1_1_services_1_1_managers_1_1_interfaces_1_1_i_channel_manager.html" title=" " alt="" coords="5,289,119,359"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,370,106,405,133,437,203,494,280,544,356,586,427,618,425,623,354,591,277,549,200,499,129,441,102,408,81,373"/>
+<area shape="rect" id="Node000003" href="$interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory.html" title=" " alt="" coords="143,212,373,436"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="350,434,417,517,412,520,345,437"/>
+<area shape="rect" id="Node000004" href="$interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221.html" title="Interfejs dla usługi kolejki wiadomości, specyficznej dla zarządzania urządzeniami...." alt="" coords="397,273,663,375"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="533,375,533,502,527,502,527,375"/>
+<area shape="rect" id="Node000005" href="$interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service.html" title="Interfejs dla usługi kolejki wiadomości. Definiuje podstawowe operacje na kolejce,..." alt="" coords="599,5,749,160"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="623,174,562,275,557,272,618,171"/>
+<area shape="rect" id="Node000007" href="$interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mesb7e3cff71b64380c2f7bec947ecd8f26.html" title=" " alt="" coords="687,273,952,375"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="730,171,792,272,787,275,726,174"/>
+<area shape="rect" id="Node000006" href="$interfacetesting_environment_app_1_1_services_1_1_managers_1_1_interfaces_1_1_i_models_structure_json_manager.html" title=" " alt="" coords="977,209,1209,439"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="991,441,921,497,855,537,785,571,652,625,650,620,783,566,852,532,918,492,987,436"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="795,376,759,435,715,496,649,565,645,561,711,493,755,432,791,373"/>
+</map>

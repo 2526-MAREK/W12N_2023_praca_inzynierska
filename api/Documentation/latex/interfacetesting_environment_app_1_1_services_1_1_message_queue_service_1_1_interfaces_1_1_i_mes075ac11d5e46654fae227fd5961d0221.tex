@@ -1,0 +1,75 @@
+\doxysection{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+Value\+Device\+For\+Device\+Manager Interface Reference}
+\hypertarget{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221}{}\label{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221}\index{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueValueDeviceForDeviceManager@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueValueDeviceForDeviceManager}}
+
+
+Interfejs dla usługi kolejki wiadomości, specyficznej dla zarządzania urządzeniami. Rozszerza IMessage\+Queue\+Service o metody inicjalizacji kolejek.  
+
+
+
+
+Inheritance diagram for testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+Value\+Device\+For\+Device\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes93b5e6447ddf6979bc7169acb57e3ece}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+Value\+Device\+For\+Device\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mese06037baf37058ea51569d807f803452}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221_aabf90425f26fbffbf2976e77e0bbf3a1}{Initialize\+Queue}} (List$<$ string $>$ topics)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje kolejki dla określonych tematów. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Blocking\+Collection$<$ string $>$ $>$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_abc0057d77186c74a7772721ebe8c9c22}{Get\+Messages\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca listę kolekcji blokujących zawierających wiadomości. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_abf55afe1c295ad933c6de1b51edf65d7}{Enqueue\+Async}} (string queue\+Name, string message)
+\item 
+Task$<$ string $>$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_a9d99a1af573836a8f90f23cd186c453c}{Dequeue\+Async}} (string queue\+Name)
+\item 
+void \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_a11961225dfa20bb103a61a84a3d1888b}{Clear\+Queue}} (string queue\+Name)
+\item 
+void \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_a9d2ecc20ab26021d31121c4a9e7ba0cf}{Clear\+All\+Queues}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interfejs dla usługi kolejki wiadomości, specyficznej dla zarządzania urządzeniami. Rozszerza IMessage\+Queue\+Service o metody inicjalizacji kolejek. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221_aabf90425f26fbffbf2976e77e0bbf3a1}\label{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221_aabf90425f26fbffbf2976e77e0bbf3a1} 
+\index{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueValueDeviceForDeviceManager@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueValueDeviceForDeviceManager}!InitializeQueue@{InitializeQueue}}
+\index{InitializeQueue@{InitializeQueue}!testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueValueDeviceForDeviceManager@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueValueDeviceForDeviceManager}}
+\doxysubsubsection{\texorpdfstring{InitializeQueue()}{InitializeQueue()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+Value\+Device\+For\+Device\+Manager.\+Initialize\+Queue (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{topics }\end{DoxyParamCaption})}
+
+
+
+Inicjalizuje kolejki dla określonych tematów. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em topics} & Tematy, dla których mają być zainicjalizowane kolejki.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_device_manager_aa78fea2ec841ae13cfd885ce7d26d0c4}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Value\+Device\+For\+Device\+Manager}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+testing\+Environment\+App/\+Services/\+Message\+Queue\+Service/\+Interfaces/\mbox{\hyperlink{_i_message_queue_value_device_for_device_manager_8cs}{IMessage\+Queue\+Value\+Device\+For\+Device\+Manager.\+cs}}\end{DoxyCompactItemize}

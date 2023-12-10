@@ -1,0 +1,12 @@
+<map id="testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForDeviceManager" name="testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForDeviceManager">
+<area shape="rect" id="Node000001" title="Implementacja MessageQueueService, specyficzna dla zarządzania urządzeniami." alt="" coords="145,497,419,636"/>
+<area shape="rect" id="Node000002" href="$classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service.html" title="Abstrakcyjna klasa bazowa dla usług kolejki wiadomości. Zapewnia podstawową implementację operacji na..." alt="" coords="5,223,169,420"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,430,230,496,225,499,173,433"/>
+<area shape="rect" id="Node000003" href="$interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service.html" title="Interfejs dla usługi kolejki wiadomości. Definiuje podstawowe operacje na kolejce,..." alt="" coords="108,5,259,160"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="149,175,129,224,124,222,144,173"/>
+<area shape="rect" id="Node000004" href="$interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221.html" title="Interfejs dla usługi kolejki wiadomości, specyficznej dla zarządzania urządzeniami...." alt="" coords="193,279,371,364"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="223,173,267,278,262,280,219,175"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="285,379,285,498,279,498,279,379"/>
+<area shape="rect" id="Node000005" href="$interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory.html" title=" " alt="" coords="395,209,625,433"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="408,435,359,487,355,483,404,431"/>
+</map>

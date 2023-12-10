@@ -1,0 +1,161 @@
+\doxysection{testing\+Environment\+App.\+Services.\+Manager\+Service.\+Channel\+Manager Class Reference}
+\hypertarget{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager}{}\label{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager}\index{testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}}
+
+
+Inheritance diagram for testing\+Environment\+App.\+Services.\+Manager\+Service.\+Channel\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+Environment\+App.\+Services.\+Manager\+Service.\+Channel\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a3b5bf998214329f965837c5bd892f8ff}{Channel\+Manager}} (\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221}{IMessage\+Queue\+Value\+Device\+For\+Device\+Manager}} message\+Queue\+Value\+Device\+For\+Device\+Manager, \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory}{IChannel\+Factory}} channel\+Factory, IService\+Scope\+Factory scope\+Factory, \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_managers_1_1_interfaces_1_1_i_models_structure_json_manager}{IModels\+Structure\+Json\+Manager}} models\+Structure\+Json\+Manager, \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mesb7e3cff71b64380c2f7bec947ecd8f26}{IMessage\+Queue\+For\+Msrt\+Save\+To\+Data\+Base}} message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a442ea15154fa9315ffd7f71e66150da4}{Start\+Async}} (Cancellation\+Token cancellation\+Token)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_ac5ad69fd96c671f497cd29e670b7a478}{Add\+Msrt\+To\+Data\+Base}} (string key\+To\+Device, double value)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a2764a98d62172db04279bd3645c8650e}{Update\+Status\+Alarm\+In\+Data\+Base\+And\+In\+Device\+Factory}} (string key\+To\+Device, string message1, string message2)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_af37a27669a338df7b97e16bde8339db1}{Check\+Warning\+Alarm\+In\+Device}} (string key\+To\+Device)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_ae5d02e1d60b59c495cf3e2a299255605}{Check\+Urgent\+Alarm\+In\+Device}} (string key\+To\+Device)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_aff6e34123ac7a585106f42af63b701bd}{Save\+Alarm\+To\+Data\+Base}} (string key\+To\+Device, List$<$ \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_alarms_1_1_alarm}{Alarm}} $>$ alarms)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a1b2aee4292c9a53ebded50fee77d16b6}{Check\+The\+Devices\+From\+System}} (string json, string system\+Identifier)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_ada2771c516132954fb72b4f8d4634bb1}{Parse\+Message\+To\+Save\+Msrts\+To\+Data\+Base}} (string message)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory}{IChannel\+Factory}} \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_abbffe52c24c3eff563741f53b8c4b4b1}{\+\_\+channel\+Factory}}
+\item 
+readonly IService\+Scope\+Factory \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a4132f1f8082a2b9c29be86a50dc1b8fc}{\+\_\+scope\+Factory}}
+\item 
+readonly \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221}{IMessage\+Queue\+Value\+Device\+For\+Device\+Manager}} \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a3e5e6081eee3a9b76b999e8495a35f39}{\+\_\+message\+Queue\+Value\+Device\+For\+Device\+Manager}}
+\item 
+readonly \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_managers_1_1_interfaces_1_1_i_models_structure_json_manager}{IModels\+Structure\+Json\+Manager}} \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a03c9cc1d1481573240a39ca6e10396e8}{\+\_\+models\+Structure\+Json\+Manager}}
+\item 
+readonly \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mesb7e3cff71b64380c2f7bec947ecd8f26}{IMessage\+Queue\+For\+Msrt\+Save\+To\+Data\+Base}} \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_aeed2b2b4fb40d14377c7ef5acda14103}{\+\_\+message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a3b5bf998214329f965837c5bd892f8ff}\label{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a3b5bf998214329f965837c5bd892f8ff} 
+\index{testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}!ChannelManager@{ChannelManager}}
+\index{ChannelManager@{ChannelManager}!testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}}
+\doxysubsubsection{\texorpdfstring{ChannelManager()}{ChannelManager()}}
+{\footnotesize\ttfamily testing\+Environment\+App.\+Services.\+Manager\+Service.\+Channel\+Manager.\+Channel\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221}{IMessage\+Queue\+Value\+Device\+For\+Device\+Manager}}}]{message\+Queue\+Value\+Device\+For\+Device\+Manager,  }\item[{\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory}{IChannel\+Factory}}}]{channel\+Factory,  }\item[{IService\+Scope\+Factory}]{scope\+Factory,  }\item[{\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_managers_1_1_interfaces_1_1_i_models_structure_json_manager}{IModels\+Structure\+Json\+Manager}}}]{models\+Structure\+Json\+Manager,  }\item[{\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mesb7e3cff71b64380c2f7bec947ecd8f26}{IMessage\+Queue\+For\+Msrt\+Save\+To\+Data\+Base}}}]{message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_ac5ad69fd96c671f497cd29e670b7a478}\label{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_ac5ad69fd96c671f497cd29e670b7a478} 
+\index{testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}!AddMsrtToDataBase@{AddMsrtToDataBase}}
+\index{AddMsrtToDataBase@{AddMsrtToDataBase}!testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}}
+\doxysubsubsection{\texorpdfstring{AddMsrtToDataBase()}{AddMsrtToDataBase()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Manager\+Service.\+Channel\+Manager.\+Add\+Msrt\+To\+Data\+Base (\begin{DoxyParamCaption}\item[{string}]{key\+To\+Device,  }\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a1b2aee4292c9a53ebded50fee77d16b6}\label{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a1b2aee4292c9a53ebded50fee77d16b6} 
+\index{testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}!CheckTheDevicesFromSystem@{CheckTheDevicesFromSystem}}
+\index{CheckTheDevicesFromSystem@{CheckTheDevicesFromSystem}!testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}}
+\doxysubsubsection{\texorpdfstring{CheckTheDevicesFromSystem()}{CheckTheDevicesFromSystem()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Manager\+Service.\+Channel\+Manager.\+Check\+The\+Devices\+From\+System (\begin{DoxyParamCaption}\item[{string}]{json,  }\item[{string}]{system\+Identifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_ae5d02e1d60b59c495cf3e2a299255605}\label{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_ae5d02e1d60b59c495cf3e2a299255605} 
+\index{testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}!CheckUrgentAlarmInDevice@{CheckUrgentAlarmInDevice}}
+\index{CheckUrgentAlarmInDevice@{CheckUrgentAlarmInDevice}!testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}}
+\doxysubsubsection{\texorpdfstring{CheckUrgentAlarmInDevice()}{CheckUrgentAlarmInDevice()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Manager\+Service.\+Channel\+Manager.\+Check\+Urgent\+Alarm\+In\+Device (\begin{DoxyParamCaption}\item[{string}]{key\+To\+Device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_af37a27669a338df7b97e16bde8339db1}\label{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_af37a27669a338df7b97e16bde8339db1} 
+\index{testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}!CheckWarningAlarmInDevice@{CheckWarningAlarmInDevice}}
+\index{CheckWarningAlarmInDevice@{CheckWarningAlarmInDevice}!testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}}
+\doxysubsubsection{\texorpdfstring{CheckWarningAlarmInDevice()}{CheckWarningAlarmInDevice()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Manager\+Service.\+Channel\+Manager.\+Check\+Warning\+Alarm\+In\+Device (\begin{DoxyParamCaption}\item[{string}]{key\+To\+Device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_ada2771c516132954fb72b4f8d4634bb1}\label{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_ada2771c516132954fb72b4f8d4634bb1} 
+\index{testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}!ParseMessageToSaveMsrtsToDataBase@{ParseMessageToSaveMsrtsToDataBase}}
+\index{ParseMessageToSaveMsrtsToDataBase@{ParseMessageToSaveMsrtsToDataBase}!testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}}
+\doxysubsubsection{\texorpdfstring{ParseMessageToSaveMsrtsToDataBase()}{ParseMessageToSaveMsrtsToDataBase()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Manager\+Service.\+Channel\+Manager.\+Parse\+Message\+To\+Save\+Msrts\+To\+Data\+Base (\begin{DoxyParamCaption}\item[{string}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_aff6e34123ac7a585106f42af63b701bd}\label{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_aff6e34123ac7a585106f42af63b701bd} 
+\index{testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}!SaveAlarmToDataBase@{SaveAlarmToDataBase}}
+\index{SaveAlarmToDataBase@{SaveAlarmToDataBase}!testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}}
+\doxysubsubsection{\texorpdfstring{SaveAlarmToDataBase()}{SaveAlarmToDataBase()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Manager\+Service.\+Channel\+Manager.\+Save\+Alarm\+To\+Data\+Base (\begin{DoxyParamCaption}\item[{string}]{key\+To\+Device,  }\item[{List$<$ \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_alarms_1_1_alarm}{Alarm}} $>$}]{alarms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a442ea15154fa9315ffd7f71e66150da4}\label{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a442ea15154fa9315ffd7f71e66150da4} 
+\index{testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}!StartAsync@{StartAsync}}
+\index{StartAsync@{StartAsync}!testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}}
+\doxysubsubsection{\texorpdfstring{StartAsync()}{StartAsync()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Manager\+Service.\+Channel\+Manager.\+Start\+Async (\begin{DoxyParamCaption}\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_managers_1_1_interfaces_1_1_i_channel_manager_abce55d45d87b574086d654486deae428}{testing\+Environment\+App.\+Services.\+Managers.\+Interfaces.\+IChannel\+Manager}}.
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a2764a98d62172db04279bd3645c8650e}\label{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a2764a98d62172db04279bd3645c8650e} 
+\index{testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}!UpdateStatusAlarmInDataBaseAndInDeviceFactory@{UpdateStatusAlarmInDataBaseAndInDeviceFactory}}
+\index{UpdateStatusAlarmInDataBaseAndInDeviceFactory@{UpdateStatusAlarmInDataBaseAndInDeviceFactory}!testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}}
+\doxysubsubsection{\texorpdfstring{UpdateStatusAlarmInDataBaseAndInDeviceFactory()}{UpdateStatusAlarmInDataBaseAndInDeviceFactory()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Manager\+Service.\+Channel\+Manager.\+Update\+Status\+Alarm\+In\+Data\+Base\+And\+In\+Device\+Factory (\begin{DoxyParamCaption}\item[{string}]{key\+To\+Device,  }\item[{string}]{message1,  }\item[{string}]{message2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_abbffe52c24c3eff563741f53b8c4b4b1}\label{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_abbffe52c24c3eff563741f53b8c4b4b1} 
+\index{testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}!\_channelFactory@{\_channelFactory}}
+\index{\_channelFactory@{\_channelFactory}!testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}}
+\doxysubsubsection{\texorpdfstring{\_channelFactory}{\_channelFactory}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory}{IChannel\+Factory}} testing\+Environment\+App.\+Services.\+Manager\+Service.\+Channel\+Manager.\+\_\+channel\+Factory\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_aeed2b2b4fb40d14377c7ef5acda14103}\label{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_aeed2b2b4fb40d14377c7ef5acda14103} 
+\index{testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}!\_messageQueueForMsrtSaveToDataBase@{\_messageQueueForMsrtSaveToDataBase}}
+\index{\_messageQueueForMsrtSaveToDataBase@{\_messageQueueForMsrtSaveToDataBase}!testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}}
+\doxysubsubsection{\texorpdfstring{\_messageQueueForMsrtSaveToDataBase}{\_messageQueueForMsrtSaveToDataBase}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mesb7e3cff71b64380c2f7bec947ecd8f26}{IMessage\+Queue\+For\+Msrt\+Save\+To\+Data\+Base}} testing\+Environment\+App.\+Services.\+Manager\+Service.\+Channel\+Manager.\+\_\+message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a3e5e6081eee3a9b76b999e8495a35f39}\label{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a3e5e6081eee3a9b76b999e8495a35f39} 
+\index{testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}!\_messageQueueValueDeviceForDeviceManager@{\_messageQueueValueDeviceForDeviceManager}}
+\index{\_messageQueueValueDeviceForDeviceManager@{\_messageQueueValueDeviceForDeviceManager}!testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}}
+\doxysubsubsection{\texorpdfstring{\_messageQueueValueDeviceForDeviceManager}{\_messageQueueValueDeviceForDeviceManager}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221}{IMessage\+Queue\+Value\+Device\+For\+Device\+Manager}} testing\+Environment\+App.\+Services.\+Manager\+Service.\+Channel\+Manager.\+\_\+message\+Queue\+Value\+Device\+For\+Device\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a03c9cc1d1481573240a39ca6e10396e8}\label{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a03c9cc1d1481573240a39ca6e10396e8} 
+\index{testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}!\_modelsStructureJsonManager@{\_modelsStructureJsonManager}}
+\index{\_modelsStructureJsonManager@{\_modelsStructureJsonManager}!testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}}
+\doxysubsubsection{\texorpdfstring{\_modelsStructureJsonManager}{\_modelsStructureJsonManager}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_managers_1_1_interfaces_1_1_i_models_structure_json_manager}{IModels\+Structure\+Json\+Manager}} testing\+Environment\+App.\+Services.\+Manager\+Service.\+Channel\+Manager.\+\_\+models\+Structure\+Json\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a4132f1f8082a2b9c29be86a50dc1b8fc}\label{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager_a4132f1f8082a2b9c29be86a50dc1b8fc} 
+\index{testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}!\_scopeFactory@{\_scopeFactory}}
+\index{\_scopeFactory@{\_scopeFactory}!testingEnvironmentApp.Services.ManagerService.ChannelManager@{testingEnvironmentApp.Services.ManagerService.ChannelManager}}
+\doxysubsubsection{\texorpdfstring{\_scopeFactory}{\_scopeFactory}}
+{\footnotesize\ttfamily readonly IService\+Scope\+Factory testing\+Environment\+App.\+Services.\+Manager\+Service.\+Channel\+Manager.\+\_\+scope\+Factory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+testing\+Environment\+App/\+Services/\+Managers/\mbox{\hyperlink{_channel_manager_8cs}{Channel\+Manager.\+cs}}\end{DoxyCompactItemize}

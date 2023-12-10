@@ -1,0 +1,7 @@
+<map id="testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForMsrtSaveToDataBase" name="testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForMsrtSaveToDataBase">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,208,271,309"/>
+<area shape="rect" id="Node000003" href="$classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_msrt_save_to_data_base.html" title=" " alt="" coords="8,357,268,496"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="141,324,141,358,135,358,135,324"/>
+<area shape="rect" id="Node000002" href="$interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service.html" title="Interfejs dla usługi kolejki wiadomości. Definiuje podstawowe operacje na kolejce,..." alt="" coords="63,5,213,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,175,141,208,135,208,135,175"/>
+</map>

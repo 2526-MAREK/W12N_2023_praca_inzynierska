@@ -1,0 +1,469 @@
+\doxysection{testing\+Environment\+App/\+Program.cs File Reference}
+\hypertarget{_program_8cs}{}\label{_program_8cs}\index{testingEnvironmentApp/Program.cs@{testingEnvironmentApp/Program.cs}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a4af5944b6111ac31321670b2ff599ecd}{Add\+Controllers}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a0d7859f9cad50e8e9fdf015100780e07}{Add\+Endpoints\+Api\+Explorer}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_ae0ce43c019a5621d731d0c622c793644}{Add\+Swagger\+Gen}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a369534c442027ea086749e8ccefcb590}{Add\+Cors}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_af121b2283cf08afe274ae077c570a3bd}{Add\+Db\+Context$<$ Application\+Db\+Context $>$}} (options=$>$ options.\+Use\+Sql\+Server(builder.\+Configuration.\+Get\+Connection\+String("{}testing\+Environment\+App\+DBCon"{})))
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_afd079e9f382b1673486abd57e50e49e6}{Add\+Singleton$<$ IEvent\+Bus, Event\+Bus $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a6c52ce302c84115eaa176f1734631ec4}{Add\+Singleton$<$ IChannel\+Factory, Channel\+Factory $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_aaee88c183888519f965813f6c5020f20}{Add\+Singleton$<$ IDevice\+Value\+Json\+Factory, Device\+Value\+Json\+Factory $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a1aff7843ebc9be6ec1468881879d0816}{Add\+Singleton$<$ IModels\+Structure\+Json\+Factory, Models\+Structure\+Json\+Factory $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_afa5635ace6fa7b7c24b26bd26e1d5573}{Add\+Singleton$<$ IObjects\+Initializer, Objects\+Initializer $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a129780df13c3c9d2bb208dda13b5f9ba}{Add\+Singleton$<$ Initialization\+Hosted\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_ae116911a4d75fd99c051a54e36b3d87b}{Add\+Hosted\+Service$<$ Initialization\+Hosted\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_aee3e5dbcd648cb6fa916f3151ee95137}{Add\+Singleton$<$ IMqtt\+Service, Mqtt\+Service $>$}} (service\+Provider=$>$ \{ var device\+Initializer=service\+Provider.\+Get\+Required\+Service$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_implementations_1_1_interfaces_1_1_i_objects_initializer}{IObjects\+Initializer}} $>$();if(!device\+Initializer.\+Is\+Initialization\+Complete()) \{ throw new Invalid\+Operation\+Exception("{}Urz¹dzenia musz¹ byæ zainicjalizowane przed uruchomieniem Mqtt\+Service."{});\} var device\+Factory=service\+Provider.\+Get\+Required\+Service$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory}{IChannel\+Factory}} $>$();var device\+Value\+Json\+Factory=service\+Provider.\+Get\+Required\+Service$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_for_json_fact3e645115c4956e2671f2d00e70725cff}{IDevice\+Value\+Json\+Factory}} $>$();var mess\+Serivce=service\+Provider.\+Get\+Required\+Service$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes8dbc3a2adaf867707d201e1f85e36179}{IMessage\+Queue\+Value\+Device\+For\+Web\+Socket\+Device}} $>$();var message\+Queue\+Value\+Device\+For\+Device\+Manager=service\+Provider.\+Get\+Required\+Service$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221}{IMessage\+Queue\+Value\+Device\+For\+Device\+Manager}} $>$();var message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base=service\+Provider.\+Get\+Required\+Service$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mesb7e3cff71b64380c2f7bec947ecd8f26}{IMessage\+Queue\+For\+Msrt\+Save\+To\+Data\+Base}} $>$();return new \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service}{Mqtt\+Service}}(mess\+Serivce, message\+Queue\+Value\+Device\+For\+Device\+Manager, device\+Factory, device\+Value\+Json\+Factory, message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base);\})
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_adc528b9b013c437109679cc85a6f1d94}{Add\+Scoped$<$ IDevice\+Data\+Service, Device\+Data\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a9189848eeabd66baf59b0b88dc1d6cf2}{Add\+Scoped$<$ IAlarm\+Data\+Service, Alarm\+Data\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_afde231c916ea4095726d807f49ad66be}{Add\+Scoped$<$ IChannel\+Data\+Service, Channel\+Data\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a78b8e09230003cdf63ec5dccf449fac6}{Add\+Scoped$<$ IHub\+Data\+Service, Hub\+Data\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a7ade6dd31623b4944e258cd5cda2b38f}{Add\+Scoped$<$ IMsrt\+Association\+Data\+Service, Msrt\+Association\+Data\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a61e9bbb2f19785338660c13719cd405c}{Add\+Scoped$<$ IMsrt\+Data\+Service, Msrt\+Data\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a828581c092b43d7bea8446f355e3f2d0}{Add\+Scoped$<$ IMsrt\+Point\+Data\+Service, Msrt\+Point\+Data\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a6a99cce1c12238d232a6ff49e057d8d3}{Add\+Transient$<$ IDevice\+Service, Device\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_abd9b0e8ba35bf863abcb080045c2c3ed}{Add\+Transient$<$ IAlarm\+Service, Alarm\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a9507a5cb29a6db07136e77000f21f054}{Add\+Transient$<$ IChannel\+Service, Channel\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a55b5c78a61fb0b8ee91b749e684041cc}{Add\+Transient$<$ IHub\+Service, Hub\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_aa70f497daaa5a129cff6ff270ee23d3d}{Add\+Transient$<$ IMsrt\+Association\+Service, Msrt\+Association\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a17e184d7ba97289ef27a3cdd59a83687}{Add\+Transient$<$ IMsrt\+Point\+Service, Msrt\+Point\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a185c88440e7a9e1cafd944cf867fa4b0}{Add\+Transient$<$ IMsrt\+Service, Msrt\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a0c49353f2ad5cb6abcb18c1746517c13}{Add\+Transient$<$ IObjects\+To\+Data\+Base\+Initializer, Objects\+To\+Data\+Base\+Initializer $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_ab1b85ada3f0760299e645d64f080c719}{Add\+Singleton$<$ IChannel\+Manager, Channel\+Manager $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a8069599984877bcc0e5c727d5df9b3d8}{Add\+Singleton$<$ IModels\+Structure\+Json\+Manager, Models\+Structure\+Json\+Manager $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a9cce6ed00130410ebf693d8419dc8a59}{Add\+Hosted\+Service$<$ Device\+Manager\+Background\+Service $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_aa2546ce7ba91bd7db1df87df7fbd8b1e}{Add\+Singleton$<$ IWeb\+Socket\+Handler, Web\+Socket\+Handler $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a4d33109e92fdf7c87309267df719887e}{Add\+Singleton$<$ IWeb\+Socket\+Message\+Handler, Web\+Socket\+Message\+Handler $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a0717b0da04699bb9d27907afe016645b}{Add\+Singleton$<$ IWeb\+Socket\+Message\+Models\+Json\+Structure\+Handler, Web\+Socket\+Message\+Models\+Json\+Structure\+Handler $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_acd2d4a60b1ca86fa0a5a57fc1e9fbdcb}{Add\+Singleton$<$ IMessage\+Queue\+Value\+Device\+For\+Web\+Socket\+Device, Message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a5701bd0b418742a2b749658f70cbda81}{Add\+Singleton$<$ IMessage\+Queue\+Value\+Device\+For\+Device\+Manager, Message\+Queue\+Value\+Device\+For\+Device\+Manager $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_aee85c8be106071ca110a7301f24e345c}{Add\+Singleton$<$ IMessage\+Queue\+For\+Models\+Structure\+Json, Message\+Queue\+For\+Models\+Structure\+Json $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a3507e63da64e037647bd6628cabf9fea}{Add\+Singleton$<$ IMessage\+Queue\+For\+Msrt\+Save\+To\+Data\+Base, Message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base $>$}} ()
+\item 
+app. \mbox{\hyperlink{_program_8cs_a9a5cfe7fee09f478241b98af703affea}{Use\+Swagger}} ()
+\item 
+app. \mbox{\hyperlink{_program_8cs_a968f30949d31f6febdcf7f3fe40bfa42}{Use\+Swagger\+UI}} ()
+\item 
+app. \mbox{\hyperlink{_program_8cs_a602eef420817a521ab9857bf938fb964}{Use\+Web\+Sockets}} ()
+\item 
+app. \mbox{\hyperlink{_program_8cs_a94c810d266751293a2d511a720a5625f}{Use\+Routing}} ()
+\item 
+app. \mbox{\hyperlink{_program_8cs_a1fa9a57215d45bf7c14e919a35ce2dc7}{Use\+Cors}} (c=$>$ c.\+Allow\+Any\+Header().Allow\+Any\+Origin().Allow\+Any\+Method())
+\item 
+app. \mbox{\hyperlink{_program_8cs_af6f72d752b2e73aa0292f74bd13237ab}{Use\+Authorization}} ()
+\item 
+app. \mbox{\hyperlink{_program_8cs_a5ede1aa3e4362df1c1dece947e6f696a}{Use\+Endpoints}} (endpoints=$>$ \{ endpoints.\+Map\+Controllers();\})
+\item 
+await init\+Service. \mbox{\hyperlink{_program_8cs_af73684d9f8d95735d2d320d2762c7d0c}{Start\+Async}} (new Cancellation\+Token())
+\item 
+logger. \mbox{\hyperlink{_program_8cs_aa1582008c4daae2d388f6ffe27241b13}{Log\+Information}} ("{}Inicjalizacja serwisu XYZ zakoñczona sukcesem."{})
+\item 
+\mbox{\hyperlink{_program_8cs_ab43e01d035a27754dae62444a59b3cab}{catch}} (Exception ex)
+\item 
+app. \mbox{\hyperlink{_program_8cs_aaa3dbf02e269c3ef7e8546d290c6b3dd}{Run}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}} = Web\+Application.\+Create\+Builder(args)
+\item 
+var \mbox{\hyperlink{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}} = builder.\+Build()
+\item 
+var \mbox{\hyperlink{_program_8cs_acc69707810d1669872f8199f16a0da20}{logger}} = app.\+Services.\+Get\+Required\+Service$<$ILogger$<$Program$>$$>$()
+\item 
+\mbox{\hyperlink{_program_8cs_abe4cc9788f52e49485473dc699537388}{try}}
+\item 
+var \mbox{\hyperlink{_program_8cs_ab403e88659a33805fd81d514a577da6c}{init\+Service}} = app.\+Services.\+Get\+Required\+Service$<$\mbox{\hyperlink{classtesting_environment_app_1_1_hosted_service_1_1_initialization_hosted_service}{Initialization\+Hosted\+Service}}$>$()
+\item 
+var \mbox{\hyperlink{_program_8cs_a9e67927e82483d20b1d72d10bc0a0b0f}{mqtt\+Service}} = app.\+Services.\+Get\+Required\+Service$<$\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_service}{IMqtt\+Service}}$>$() as \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service}{Mqtt\+Service}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_program_8cs_a4af5944b6111ac31321670b2ff599ecd}\label{_program_8cs_a4af5944b6111ac31321670b2ff599ecd} 
+\index{Program.cs@{Program.cs}!AddControllers@{AddControllers}}
+\index{AddControllers@{AddControllers}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddControllers()}{AddControllers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}} Services Add\+Controllers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=>}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ options.SerializerSettings.ReferenceLoopHandling\ =\ Newtonsoft.Json.ReferenceLoopHandling.Ignore;}
+\DoxyCodeLine{\ \ \ \ options.SerializerSettings.ContractResolver\ =\ \textcolor{keyword}{new}\ DefaultContractResolver();}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+\Hypertarget{_program_8cs_a369534c442027ea086749e8ccefcb590}\label{_program_8cs_a369534c442027ea086749e8ccefcb590} 
+\index{Program.cs@{Program.cs}!AddCors@{AddCors}}
+\index{AddCors@{AddCors}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddCors()}{AddCors()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Cors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_af121b2283cf08afe274ae077c570a3bd}\label{_program_8cs_af121b2283cf08afe274ae077c570a3bd} 
+\index{Program.cs@{Program.cs}!AddDbContext$<$ ApplicationDbContext $>$@{AddDbContext$<$ ApplicationDbContext $>$}}
+\index{AddDbContext$<$ ApplicationDbContext $>$@{AddDbContext$<$ ApplicationDbContext $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddDbContext$<$ ApplicationDbContext $>$()}{AddDbContext< ApplicationDbContext >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Db\+Context$<$ \mbox{\hyperlink{classtesting_environment_app_1_1_data_1_1_application_db_context}{Application\+Db\+Context}} $>$ (\begin{DoxyParamCaption}\item[{options}]{,  }\item[{options.}]{Use\+Sql\+Serverbuilder.\+Configuration.\+Get\+Connection\+String("{}testing\+Environment\+App\+DBCon"{}) }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a0d7859f9cad50e8e9fdf015100780e07}\label{_program_8cs_a0d7859f9cad50e8e9fdf015100780e07} 
+\index{Program.cs@{Program.cs}!AddEndpointsApiExplorer@{AddEndpointsApiExplorer}}
+\index{AddEndpointsApiExplorer@{AddEndpointsApiExplorer}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddEndpointsApiExplorer()}{AddEndpointsApiExplorer()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Endpoints\+Api\+Explorer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a9cce6ed00130410ebf693d8419dc8a59}\label{_program_8cs_a9cce6ed00130410ebf693d8419dc8a59} 
+\index{Program.cs@{Program.cs}!AddHostedService$<$ DeviceManagerBackgroundService $>$@{AddHostedService$<$ DeviceManagerBackgroundService $>$}}
+\index{AddHostedService$<$ DeviceManagerBackgroundService $>$@{AddHostedService$<$ DeviceManagerBackgroundService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddHostedService$<$ DeviceManagerBackgroundService $>$()}{AddHostedService< DeviceManagerBackgroundService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Hosted\+Service$<$ \mbox{\hyperlink{classtesting_environment_app_1_1_hosted_service_1_1_device_manager_background_service}{Device\+Manager\+Background\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_ae116911a4d75fd99c051a54e36b3d87b}\label{_program_8cs_ae116911a4d75fd99c051a54e36b3d87b} 
+\index{Program.cs@{Program.cs}!AddHostedService$<$ InitializationHostedService $>$@{AddHostedService$<$ InitializationHostedService $>$}}
+\index{AddHostedService$<$ InitializationHostedService $>$@{AddHostedService$<$ InitializationHostedService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddHostedService$<$ InitializationHostedService $>$()}{AddHostedService< InitializationHostedService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Hosted\+Service$<$ \mbox{\hyperlink{classtesting_environment_app_1_1_hosted_service_1_1_initialization_hosted_service}{Initialization\+Hosted\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a9189848eeabd66baf59b0b88dc1d6cf2}\label{_program_8cs_a9189848eeabd66baf59b0b88dc1d6cf2} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ IAlarmDataService, AlarmDataService $>$@{AddScoped$<$ IAlarmDataService, AlarmDataService $>$}}
+\index{AddScoped$<$ IAlarmDataService, AlarmDataService $>$@{AddScoped$<$ IAlarmDataService, AlarmDataService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ IAlarmDataService, AlarmDataService $>$()}{AddScoped< IAlarmDataService, AlarmDataService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_data_services_1_1_interfaces_1_1_i_alarm_data_service}{IAlarm\+Data\+Service}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_data_base_service_1_1_alarm_data_service}{Alarm\+Data\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_afde231c916ea4095726d807f49ad66be}\label{_program_8cs_afde231c916ea4095726d807f49ad66be} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ IChannelDataService, ChannelDataService $>$@{AddScoped$<$ IChannelDataService, ChannelDataService $>$}}
+\index{AddScoped$<$ IChannelDataService, ChannelDataService $>$@{AddScoped$<$ IChannelDataService, ChannelDataService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ IChannelDataService, ChannelDataService $>$()}{AddScoped< IChannelDataService, ChannelDataService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_data_services_1_1_interfaces_1_1_i_channel_data_service}{IChannel\+Data\+Service}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_data_services_1_1_channel_data_service}{Channel\+Data\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_adc528b9b013c437109679cc85a6f1d94}\label{_program_8cs_adc528b9b013c437109679cc85a6f1d94} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ IDeviceDataService, DeviceDataService $>$@{AddScoped$<$ IDeviceDataService, DeviceDataService $>$}}
+\index{AddScoped$<$ IDeviceDataService, DeviceDataService $>$@{AddScoped$<$ IDeviceDataService, DeviceDataService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ IDeviceDataService, DeviceDataService $>$()}{AddScoped< IDeviceDataService, DeviceDataService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_data_services_1_1_interfaces_1_1_i_device_data_service}{IDevice\+Data\+Service}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_data_base_service_1_1_device_data_service}{Device\+Data\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a78b8e09230003cdf63ec5dccf449fac6}\label{_program_8cs_a78b8e09230003cdf63ec5dccf449fac6} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ IHubDataService, HubDataService $>$@{AddScoped$<$ IHubDataService, HubDataService $>$}}
+\index{AddScoped$<$ IHubDataService, HubDataService $>$@{AddScoped$<$ IHubDataService, HubDataService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ IHubDataService, HubDataService $>$()}{AddScoped< IHubDataService, HubDataService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_data_services_1_1_interfaces_1_1_i_hub_data_service}{IHub\+Data\+Service}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_data_services_1_1_hub_data_service}{Hub\+Data\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a7ade6dd31623b4944e258cd5cda2b38f}\label{_program_8cs_a7ade6dd31623b4944e258cd5cda2b38f} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ IMsrtAssociationDataService, MsrtAssociationDataService $>$@{AddScoped$<$ IMsrtAssociationDataService, MsrtAssociationDataService $>$}}
+\index{AddScoped$<$ IMsrtAssociationDataService, MsrtAssociationDataService $>$@{AddScoped$<$ IMsrtAssociationDataService, MsrtAssociationDataService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ IMsrtAssociationDataService, MsrtAssociationDataService $>$()}{AddScoped< IMsrtAssociationDataService, MsrtAssociationDataService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_data_services_1_1_interfaces_1_1_i_msrt_association_data_service}{IMsrt\+Association\+Data\+Service}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_association_data_service}{Msrt\+Association\+Data\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a61e9bbb2f19785338660c13719cd405c}\label{_program_8cs_a61e9bbb2f19785338660c13719cd405c} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ IMsrtDataService, MsrtDataService $>$@{AddScoped$<$ IMsrtDataService, MsrtDataService $>$}}
+\index{AddScoped$<$ IMsrtDataService, MsrtDataService $>$@{AddScoped$<$ IMsrtDataService, MsrtDataService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ IMsrtDataService, MsrtDataService $>$()}{AddScoped< IMsrtDataService, MsrtDataService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_data_services_1_1_interfaces_1_1_i_msrt_data_service}{IMsrt\+Data\+Service}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service}{Msrt\+Data\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a828581c092b43d7bea8446f355e3f2d0}\label{_program_8cs_a828581c092b43d7bea8446f355e3f2d0} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ IMsrtPointDataService, MsrtPointDataService $>$@{AddScoped$<$ IMsrtPointDataService, MsrtPointDataService $>$}}
+\index{AddScoped$<$ IMsrtPointDataService, MsrtPointDataService $>$@{AddScoped$<$ IMsrtPointDataService, MsrtPointDataService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ IMsrtPointDataService, MsrtPointDataService $>$()}{AddScoped< IMsrtPointDataService, MsrtPointDataService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_data_services_1_1_interfaces_1_1_i_msrt_point_data_service}{IMsrt\+Point\+Data\+Service}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_point_data_service}{Msrt\+Point\+Data\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a6c52ce302c84115eaa176f1734631ec4}\label{_program_8cs_a6c52ce302c84115eaa176f1734631ec4} 
+\index{Program.cs@{Program.cs}!AddSingleton$<$ IChannelFactory, ChannelFactory $>$@{AddSingleton$<$ IChannelFactory, ChannelFactory $>$}}
+\index{AddSingleton$<$ IChannelFactory, ChannelFactory $>$@{AddSingleton$<$ IChannelFactory, ChannelFactory $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddSingleton$<$ IChannelFactory, ChannelFactory $>$()}{AddSingleton< IChannelFactory, ChannelFactory >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Singleton$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory}{IChannel\+Factory}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory}{Channel\+Factory}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_ab1b85ada3f0760299e645d64f080c719}\label{_program_8cs_ab1b85ada3f0760299e645d64f080c719} 
+\index{Program.cs@{Program.cs}!AddSingleton$<$ IChannelManager, ChannelManager $>$@{AddSingleton$<$ IChannelManager, ChannelManager $>$}}
+\index{AddSingleton$<$ IChannelManager, ChannelManager $>$@{AddSingleton$<$ IChannelManager, ChannelManager $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddSingleton$<$ IChannelManager, ChannelManager $>$()}{AddSingleton< IChannelManager, ChannelManager >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Singleton$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_managers_1_1_interfaces_1_1_i_channel_manager}{IChannel\+Manager}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_manager_service_1_1_channel_manager}{Channel\+Manager}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_aaee88c183888519f965813f6c5020f20}\label{_program_8cs_aaee88c183888519f965813f6c5020f20} 
+\index{Program.cs@{Program.cs}!AddSingleton$<$ IDeviceValueJsonFactory, DeviceValueJsonFactory $>$@{AddSingleton$<$ IDeviceValueJsonFactory, DeviceValueJsonFactory $>$}}
+\index{AddSingleton$<$ IDeviceValueJsonFactory, DeviceValueJsonFactory $>$@{AddSingleton$<$ IDeviceValueJsonFactory, DeviceValueJsonFactory $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddSingleton$<$ IDeviceValueJsonFactory, DeviceValueJsonFactory $>$()}{AddSingleton< IDeviceValueJsonFactory, DeviceValueJsonFactory >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Singleton$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_for_json_fact3e645115c4956e2671f2d00e70725cff}{IDevice\+Value\+Json\+Factory}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_device_value_json_factory}{Device\+Value\+Json\+Factory}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_afd079e9f382b1673486abd57e50e49e6}\label{_program_8cs_afd079e9f382b1673486abd57e50e49e6} 
+\index{Program.cs@{Program.cs}!AddSingleton$<$ IEventBus, EventBus $>$@{AddSingleton$<$ IEventBus, EventBus $>$}}
+\index{AddSingleton$<$ IEventBus, EventBus $>$@{AddSingleton$<$ IEventBus, EventBus $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddSingleton$<$ IEventBus, EventBus $>$()}{AddSingleton< IEventBus, EventBus >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Singleton$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_public_subscribe_service_1_1_interfaces_1_1_i_event_bus}{IEvent\+Bus}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_public_subscribe_service_1_1_event_bus}{Event\+Bus}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_aee85c8be106071ca110a7301f24e345c}\label{_program_8cs_aee85c8be106071ca110a7301f24e345c} 
+\index{Program.cs@{Program.cs}!AddSingleton$<$ IMessageQueueForModelsStructureJson, MessageQueueForModelsStructureJson $>$@{AddSingleton$<$ IMessageQueueForModelsStructureJson, MessageQueueForModelsStructureJson $>$}}
+\index{AddSingleton$<$ IMessageQueueForModelsStructureJson, MessageQueueForModelsStructureJson $>$@{AddSingleton$<$ IMessageQueueForModelsStructureJson, MessageQueueForModelsStructureJson $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddSingleton$<$ IMessageQueueForModelsStructureJson, MessageQueueForModelsStructureJson $>$()}{AddSingleton< IMessageQueueForModelsStructureJson, MessageQueueForModelsStructureJson >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Singleton$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f}{IMessage\+Queue\+For\+Models\+Structure\+Json}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json}{Message\+Queue\+For\+Models\+Structure\+Json}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a3507e63da64e037647bd6628cabf9fea}\label{_program_8cs_a3507e63da64e037647bd6628cabf9fea} 
+\index{Program.cs@{Program.cs}!AddSingleton$<$ IMessageQueueForMsrtSaveToDataBase, MessageQueueForMsrtSaveToDataBase $>$@{AddSingleton$<$ IMessageQueueForMsrtSaveToDataBase, MessageQueueForMsrtSaveToDataBase $>$}}
+\index{AddSingleton$<$ IMessageQueueForMsrtSaveToDataBase, MessageQueueForMsrtSaveToDataBase $>$@{AddSingleton$<$ IMessageQueueForMsrtSaveToDataBase, MessageQueueForMsrtSaveToDataBase $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddSingleton$<$ IMessageQueueForMsrtSaveToDataBase, MessageQueueForMsrtSaveToDataBase $>$()}{AddSingleton< IMessageQueueForMsrtSaveToDataBase, MessageQueueForMsrtSaveToDataBase >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Singleton$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mesb7e3cff71b64380c2f7bec947ecd8f26}{IMessage\+Queue\+For\+Msrt\+Save\+To\+Data\+Base}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_msrt_save_to_data_base}{Message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a5701bd0b418742a2b749658f70cbda81}\label{_program_8cs_a5701bd0b418742a2b749658f70cbda81} 
+\index{Program.cs@{Program.cs}!AddSingleton$<$ IMessageQueueValueDeviceForDeviceManager, MessageQueueValueDeviceForDeviceManager $>$@{AddSingleton$<$ IMessageQueueValueDeviceForDeviceManager, MessageQueueValueDeviceForDeviceManager $>$}}
+\index{AddSingleton$<$ IMessageQueueValueDeviceForDeviceManager, MessageQueueValueDeviceForDeviceManager $>$@{AddSingleton$<$ IMessageQueueValueDeviceForDeviceManager, MessageQueueValueDeviceForDeviceManager $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddSingleton$<$ IMessageQueueValueDeviceForDeviceManager, MessageQueueValueDeviceForDeviceManager $>$()}{AddSingleton< IMessageQueueValueDeviceForDeviceManager, MessageQueueValueDeviceForDeviceManager >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Singleton$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221}{IMessage\+Queue\+Value\+Device\+For\+Device\+Manager}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_device_manager}{Message\+Queue\+Value\+Device\+For\+Device\+Manager}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_acd2d4a60b1ca86fa0a5a57fc1e9fbdcb}\label{_program_8cs_acd2d4a60b1ca86fa0a5a57fc1e9fbdcb} 
+\index{Program.cs@{Program.cs}!AddSingleton$<$ IMessageQueueValueDeviceForWebSocketDevice, MessageQueueValueDeviceForWebSocketDevice $>$@{AddSingleton$<$ IMessageQueueValueDeviceForWebSocketDevice, MessageQueueValueDeviceForWebSocketDevice $>$}}
+\index{AddSingleton$<$ IMessageQueueValueDeviceForWebSocketDevice, MessageQueueValueDeviceForWebSocketDevice $>$@{AddSingleton$<$ IMessageQueueValueDeviceForWebSocketDevice, MessageQueueValueDeviceForWebSocketDevice $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddSingleton$<$ IMessageQueueValueDeviceForWebSocketDevice, MessageQueueValueDeviceForWebSocketDevice $>$()}{AddSingleton< IMessageQueueValueDeviceForWebSocketDevice, MessageQueueValueDeviceForWebSocketDevice >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Singleton$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes8dbc3a2adaf867707d201e1f85e36179}{IMessage\+Queue\+Value\+Device\+For\+Web\+Socket\+Device}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device}{Message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a1aff7843ebc9be6ec1468881879d0816}\label{_program_8cs_a1aff7843ebc9be6ec1468881879d0816} 
+\index{Program.cs@{Program.cs}!AddSingleton$<$ IModelsStructureJsonFactory, ModelsStructureJsonFactory $>$@{AddSingleton$<$ IModelsStructureJsonFactory, ModelsStructureJsonFactory $>$}}
+\index{AddSingleton$<$ IModelsStructureJsonFactory, ModelsStructureJsonFactory $>$@{AddSingleton$<$ IModelsStructureJsonFactory, ModelsStructureJsonFactory $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddSingleton$<$ IModelsStructureJsonFactory, ModelsStructureJsonFactory $>$()}{AddSingleton< IModelsStructureJsonFactory, ModelsStructureJsonFactory >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Singleton$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_for_json_facta1cbc61e88ec97538e9ed55de23ab2e8}{IModels\+Structure\+Json\+Factory}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_models_structure_json_factory}{Models\+Structure\+Json\+Factory}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a8069599984877bcc0e5c727d5df9b3d8}\label{_program_8cs_a8069599984877bcc0e5c727d5df9b3d8} 
+\index{Program.cs@{Program.cs}!AddSingleton$<$ IModelsStructureJsonManager, ModelsStructureJsonManager $>$@{AddSingleton$<$ IModelsStructureJsonManager, ModelsStructureJsonManager $>$}}
+\index{AddSingleton$<$ IModelsStructureJsonManager, ModelsStructureJsonManager $>$@{AddSingleton$<$ IModelsStructureJsonManager, ModelsStructureJsonManager $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddSingleton$<$ IModelsStructureJsonManager, ModelsStructureJsonManager $>$()}{AddSingleton< IModelsStructureJsonManager, ModelsStructureJsonManager >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Singleton$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_managers_1_1_interfaces_1_1_i_models_structure_json_manager}{IModels\+Structure\+Json\+Manager}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_managers_1_1_models_structure_json_manager}{Models\+Structure\+Json\+Manager}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_aee3e5dbcd648cb6fa916f3151ee95137}\label{_program_8cs_aee3e5dbcd648cb6fa916f3151ee95137} 
+\index{Program.cs@{Program.cs}!AddSingleton$<$ IMqttService, MqttService $>$@{AddSingleton$<$ IMqttService, MqttService $>$}}
+\index{AddSingleton$<$ IMqttService, MqttService $>$@{AddSingleton$<$ IMqttService, MqttService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddSingleton$<$ IMqttService, MqttService $>$()}{AddSingleton< IMqttService, MqttService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Singleton$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_service}{IMqtt\+Service}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service}{Mqtt\+Service}} $>$ (\begin{DoxyParamCaption}\item[{service\+Provider}]{,  }\item[{\{ var device\+Initializer=service\+Provider.\+Get\+Required\+Service$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_implementations_1_1_interfaces_1_1_i_objects_initializer}{IObjects\+Initializer}} $>$();if(!device\+Initializer.\+Is\+Initialization\+Complete()) \{ throw new Invalid\+Operation\+Exception("{}Urz¹dzenia musz¹ byæ zainicjalizowane przed uruchomieniem Mqtt\+Service."{});\} var device\+Factory=service\+Provider.\+Get\+Required\+Service$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory}{IChannel\+Factory}} $>$();var device\+Value\+Json\+Factory=service\+Provider.\+Get\+Required\+Service$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_for_json_fact3e645115c4956e2671f2d00e70725cff}{IDevice\+Value\+Json\+Factory}} $>$();var mess\+Serivce=service\+Provider.\+Get\+Required\+Service$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes8dbc3a2adaf867707d201e1f85e36179}{IMessage\+Queue\+Value\+Device\+For\+Web\+Socket\+Device}} $>$();var message\+Queue\+Value\+Device\+For\+Device\+Manager=service\+Provider.\+Get\+Required\+Service$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221}{IMessage\+Queue\+Value\+Device\+For\+Device\+Manager}} $>$();var message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base=service\+Provider.\+Get\+Required\+Service$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mesb7e3cff71b64380c2f7bec947ecd8f26}{IMessage\+Queue\+For\+Msrt\+Save\+To\+Data\+Base}} $>$();return new \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service}{Mqtt\+Service}}(mess\+Serivce, message\+Queue\+Value\+Device\+For\+Device\+Manager, device\+Factory, device\+Value\+Json\+Factory, message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base);\}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a129780df13c3c9d2bb208dda13b5f9ba}\label{_program_8cs_a129780df13c3c9d2bb208dda13b5f9ba} 
+\index{Program.cs@{Program.cs}!AddSingleton$<$ InitializationHostedService $>$@{AddSingleton$<$ InitializationHostedService $>$}}
+\index{AddSingleton$<$ InitializationHostedService $>$@{AddSingleton$<$ InitializationHostedService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddSingleton$<$ InitializationHostedService $>$()}{AddSingleton< InitializationHostedService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Singleton$<$ \mbox{\hyperlink{classtesting_environment_app_1_1_hosted_service_1_1_initialization_hosted_service}{Initialization\+Hosted\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_afa5635ace6fa7b7c24b26bd26e1d5573}\label{_program_8cs_afa5635ace6fa7b7c24b26bd26e1d5573} 
+\index{Program.cs@{Program.cs}!AddSingleton$<$ IObjectsInitializer, ObjectsInitializer $>$@{AddSingleton$<$ IObjectsInitializer, ObjectsInitializer $>$}}
+\index{AddSingleton$<$ IObjectsInitializer, ObjectsInitializer $>$@{AddSingleton$<$ IObjectsInitializer, ObjectsInitializer $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddSingleton$<$ IObjectsInitializer, ObjectsInitializer $>$()}{AddSingleton< IObjectsInitializer, ObjectsInitializer >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Singleton$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_implementations_1_1_interfaces_1_1_i_objects_initializer}{IObjects\+Initializer}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_implementations_1_1_objects_initializer}{Objects\+Initializer}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_aa2546ce7ba91bd7db1df87df7fbd8b1e}\label{_program_8cs_aa2546ce7ba91bd7db1df87df7fbd8b1e} 
+\index{Program.cs@{Program.cs}!AddSingleton$<$ IWebSocketHandler, WebSocketHandler $>$@{AddSingleton$<$ IWebSocketHandler, WebSocketHandler $>$}}
+\index{AddSingleton$<$ IWebSocketHandler, WebSocketHandler $>$@{AddSingleton$<$ IWebSocketHandler, WebSocketHandler $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddSingleton$<$ IWebSocketHandler, WebSocketHandler $>$()}{AddSingleton< IWebSocketHandler, WebSocketHandler >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Singleton$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_web_socket_service_1_1_interfaces_1_1_i_web_socket_handler}{IWeb\+Socket\+Handler}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_handler}{Web\+Socket\+Handler}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a4d33109e92fdf7c87309267df719887e}\label{_program_8cs_a4d33109e92fdf7c87309267df719887e} 
+\index{Program.cs@{Program.cs}!AddSingleton$<$ IWebSocketMessageHandler, WebSocketMessageHandler $>$@{AddSingleton$<$ IWebSocketMessageHandler, WebSocketMessageHandler $>$}}
+\index{AddSingleton$<$ IWebSocketMessageHandler, WebSocketMessageHandler $>$@{AddSingleton$<$ IWebSocketMessageHandler, WebSocketMessageHandler $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddSingleton$<$ IWebSocketMessageHandler, WebSocketMessageHandler $>$()}{AddSingleton< IWebSocketMessageHandler, WebSocketMessageHandler >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Singleton$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_web_socket_service_1_1_interfaces_1_1_i_web_socket_message_handler}{IWeb\+Socket\+Message\+Handler}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_handler}{Web\+Socket\+Message\+Handler}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a0717b0da04699bb9d27907afe016645b}\label{_program_8cs_a0717b0da04699bb9d27907afe016645b} 
+\index{Program.cs@{Program.cs}!AddSingleton$<$ IWebSocketMessageModelsJsonStructureHandler, WebSocketMessageModelsJsonStructureHandler $>$@{AddSingleton$<$ IWebSocketMessageModelsJsonStructureHandler, WebSocketMessageModelsJsonStructureHandler $>$}}
+\index{AddSingleton$<$ IWebSocketMessageModelsJsonStructureHandler, WebSocketMessageModelsJsonStructureHandler $>$@{AddSingleton$<$ IWebSocketMessageModelsJsonStructureHandler, WebSocketMessageModelsJsonStructureHandler $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddSingleton$<$ IWebSocketMessageModelsJsonStructureHandler, WebSocketMessageModelsJsonStructureHandler $>$()}{AddSingleton< IWebSocketMessageModelsJsonStructureHandler, WebSocketMessageModelsJsonStructureHandler >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Singleton$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_web_socket_service_1_1_interfaces_1_1_i_web_so25b33e26567e049899e7bea6399edf7b}{IWeb\+Socket\+Message\+Models\+Json\+Structure\+Handler}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler}{Web\+Socket\+Message\+Models\+Json\+Structure\+Handler}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_ae0ce43c019a5621d731d0c622c793644}\label{_program_8cs_ae0ce43c019a5621d731d0c622c793644} 
+\index{Program.cs@{Program.cs}!AddSwaggerGen@{AddSwaggerGen}}
+\index{AddSwaggerGen@{AddSwaggerGen}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddSwaggerGen()}{AddSwaggerGen()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Swagger\+Gen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_abd9b0e8ba35bf863abcb080045c2c3ed}\label{_program_8cs_abd9b0e8ba35bf863abcb080045c2c3ed} 
+\index{Program.cs@{Program.cs}!AddTransient$<$ IAlarmService, AlarmService $>$@{AddTransient$<$ IAlarmService, AlarmService $>$}}
+\index{AddTransient$<$ IAlarmService, AlarmService $>$@{AddTransient$<$ IAlarmService, AlarmService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddTransient$<$ IAlarmService, AlarmService $>$()}{AddTransient< IAlarmService, AlarmService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Transient$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_alarm_service}{IAlarm\+Service}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service}{Alarm\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a9507a5cb29a6db07136e77000f21f054}\label{_program_8cs_a9507a5cb29a6db07136e77000f21f054} 
+\index{Program.cs@{Program.cs}!AddTransient$<$ IChannelService, ChannelService $>$@{AddTransient$<$ IChannelService, ChannelService $>$}}
+\index{AddTransient$<$ IChannelService, ChannelService $>$@{AddTransient$<$ IChannelService, ChannelService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddTransient$<$ IChannelService, ChannelService $>$()}{AddTransient< IChannelService, ChannelService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Transient$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_service}{IChannel\+Service}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_service}{Channel\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a6a99cce1c12238d232a6ff49e057d8d3}\label{_program_8cs_a6a99cce1c12238d232a6ff49e057d8d3} 
+\index{Program.cs@{Program.cs}!AddTransient$<$ IDeviceService, DeviceService $>$@{AddTransient$<$ IDeviceService, DeviceService $>$}}
+\index{AddTransient$<$ IDeviceService, DeviceService $>$@{AddTransient$<$ IDeviceService, DeviceService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddTransient$<$ IDeviceService, DeviceService $>$()}{AddTransient< IDeviceService, DeviceService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Transient$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_device_service}{IDevice\+Service}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_device_service}{Device\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a55b5c78a61fb0b8ee91b749e684041cc}\label{_program_8cs_a55b5c78a61fb0b8ee91b749e684041cc} 
+\index{Program.cs@{Program.cs}!AddTransient$<$ IHubService, HubService $>$@{AddTransient$<$ IHubService, HubService $>$}}
+\index{AddTransient$<$ IHubService, HubService $>$@{AddTransient$<$ IHubService, HubService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddTransient$<$ IHubService, HubService $>$()}{AddTransient< IHubService, HubService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Transient$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_hub_service}{IHub\+Service}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_hub_service}{Hub\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_aa70f497daaa5a129cff6ff270ee23d3d}\label{_program_8cs_aa70f497daaa5a129cff6ff270ee23d3d} 
+\index{Program.cs@{Program.cs}!AddTransient$<$ IMsrtAssociationService, MsrtAssociationService $>$@{AddTransient$<$ IMsrtAssociationService, MsrtAssociationService $>$}}
+\index{AddTransient$<$ IMsrtAssociationService, MsrtAssociationService $>$@{AddTransient$<$ IMsrtAssociationService, MsrtAssociationService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddTransient$<$ IMsrtAssociationService, MsrtAssociationService $>$()}{AddTransient< IMsrtAssociationService, MsrtAssociationService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Transient$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_msrt_association_service}{IMsrt\+Association\+Service}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_msrt_association_service}{Msrt\+Association\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a17e184d7ba97289ef27a3cdd59a83687}\label{_program_8cs_a17e184d7ba97289ef27a3cdd59a83687} 
+\index{Program.cs@{Program.cs}!AddTransient$<$ IMsrtPointService, MsrtPointService $>$@{AddTransient$<$ IMsrtPointService, MsrtPointService $>$}}
+\index{AddTransient$<$ IMsrtPointService, MsrtPointService $>$@{AddTransient$<$ IMsrtPointService, MsrtPointService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddTransient$<$ IMsrtPointService, MsrtPointService $>$()}{AddTransient< IMsrtPointService, MsrtPointService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Transient$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_msrt_point_service}{IMsrt\+Point\+Service}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_msrt_point_service}{Msrt\+Point\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a185c88440e7a9e1cafd944cf867fa4b0}\label{_program_8cs_a185c88440e7a9e1cafd944cf867fa4b0} 
+\index{Program.cs@{Program.cs}!AddTransient$<$ IMsrtService, MsrtService $>$@{AddTransient$<$ IMsrtService, MsrtService $>$}}
+\index{AddTransient$<$ IMsrtService, MsrtService $>$@{AddTransient$<$ IMsrtService, MsrtService $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddTransient$<$ IMsrtService, MsrtService $>$()}{AddTransient< IMsrtService, MsrtService >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Transient$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_msrt_service}{IMsrt\+Service}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_msrt_service}{Msrt\+Service}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a0c49353f2ad5cb6abcb18c1746517c13}\label{_program_8cs_a0c49353f2ad5cb6abcb18c1746517c13} 
+\index{Program.cs@{Program.cs}!AddTransient$<$ IObjectsToDataBaseInitializer, ObjectsToDataBaseInitializer $>$@{AddTransient$<$ IObjectsToDataBaseInitializer, ObjectsToDataBaseInitializer $>$}}
+\index{AddTransient$<$ IObjectsToDataBaseInitializer, ObjectsToDataBaseInitializer $>$@{AddTransient$<$ IObjectsToDataBaseInitializer, ObjectsToDataBaseInitializer $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddTransient$<$ IObjectsToDataBaseInitializer, ObjectsToDataBaseInitializer $>$()}{AddTransient< IObjectsToDataBaseInitializer, ObjectsToDataBaseInitializer >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Transient$<$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_implementations_1_1_interfaces_1_1_i_objects_to_data_base_initializer}{IObjects\+To\+Data\+Base\+Initializer}}, \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_implementations_1_1_objects_to_data_base_initializer}{Objects\+To\+Data\+Base\+Initializer}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_ab43e01d035a27754dae62444a59b3cab}\label{_program_8cs_ab43e01d035a27754dae62444a59b3cab} 
+\index{Program.cs@{Program.cs}!catch@{catch}}
+\index{catch@{catch}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{catch()}{catch()}}
+{\footnotesize\ttfamily catch (\begin{DoxyParamCaption}\item[{Exception}]{ex }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_aa1582008c4daae2d388f6ffe27241b13}\label{_program_8cs_aa1582008c4daae2d388f6ffe27241b13} 
+\index{Program.cs@{Program.cs}!LogInformation@{LogInformation}}
+\index{LogInformation@{LogInformation}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{LogInformation()}{LogInformation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_program_8cs_acc69707810d1669872f8199f16a0da20}{logger}} Log\+Information (\begin{DoxyParamCaption}\item[{"{}Inicjalizacja serwisu XYZ zakoñczona sukcesem."{}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_aaa3dbf02e269c3ef7e8546d290c6b3dd}\label{_program_8cs_aaa3dbf02e269c3ef7e8546d290c6b3dd} 
+\index{Program.cs@{Program.cs}!Run@{Run}}
+\index{Run@{Run}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily app. Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_af73684d9f8d95735d2d320d2762c7d0c}\label{_program_8cs_af73684d9f8d95735d2d320d2762c7d0c} 
+\index{Program.cs@{Program.cs}!StartAsync@{StartAsync}}
+\index{StartAsync@{StartAsync}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{StartAsync()}{StartAsync()}}
+{\footnotesize\ttfamily await \mbox{\hyperlink{_program_8cs_a9e67927e82483d20b1d72d10bc0a0b0f}{mqtt\+Service}} Start\+Async (\begin{DoxyParamCaption}\item[{new }]{Cancellation\+Token() }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_af6f72d752b2e73aa0292f74bd13237ab}\label{_program_8cs_af6f72d752b2e73aa0292f74bd13237ab} 
+\index{Program.cs@{Program.cs}!UseAuthorization@{UseAuthorization}}
+\index{UseAuthorization@{UseAuthorization}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseAuthorization()}{UseAuthorization()}}
+{\footnotesize\ttfamily app. Use\+Authorization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a1fa9a57215d45bf7c14e919a35ce2dc7}\label{_program_8cs_a1fa9a57215d45bf7c14e919a35ce2dc7} 
+\index{Program.cs@{Program.cs}!UseCors@{UseCors}}
+\index{UseCors@{UseCors}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseCors()}{UseCors()}}
+{\footnotesize\ttfamily app. Use\+Cors (\begin{DoxyParamCaption}\item[{c}]{,  }\item[{c.}]{Allow\+Any\+Header).\+Allow\+Any\+Origin().\+Allow\+Any\+Method( }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a5ede1aa3e4362df1c1dece947e6f696a}\label{_program_8cs_a5ede1aa3e4362df1c1dece947e6f696a} 
+\index{Program.cs@{Program.cs}!UseEndpoints@{UseEndpoints}}
+\index{UseEndpoints@{UseEndpoints}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseEndpoints()}{UseEndpoints()}}
+{\footnotesize\ttfamily app. Use\+Endpoints (\begin{DoxyParamCaption}\item[{endpoints}]{,  }\item[{\{ endpoints.\+Map\+Controllers();\}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a94c810d266751293a2d511a720a5625f}\label{_program_8cs_a94c810d266751293a2d511a720a5625f} 
+\index{Program.cs@{Program.cs}!UseRouting@{UseRouting}}
+\index{UseRouting@{UseRouting}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseRouting()}{UseRouting()}}
+{\footnotesize\ttfamily app. Use\+Routing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a9a5cfe7fee09f478241b98af703affea}\label{_program_8cs_a9a5cfe7fee09f478241b98af703affea} 
+\index{Program.cs@{Program.cs}!UseSwagger@{UseSwagger}}
+\index{UseSwagger@{UseSwagger}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseSwagger()}{UseSwagger()}}
+{\footnotesize\ttfamily app. Use\+Swagger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a968f30949d31f6febdcf7f3fe40bfa42}\label{_program_8cs_a968f30949d31f6febdcf7f3fe40bfa42} 
+\index{Program.cs@{Program.cs}!UseSwaggerUI@{UseSwaggerUI}}
+\index{UseSwaggerUI@{UseSwaggerUI}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseSwaggerUI()}{UseSwaggerUI()}}
+{\footnotesize\ttfamily app. Use\+Swagger\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a602eef420817a521ab9857bf938fb964}\label{_program_8cs_a602eef420817a521ab9857bf938fb964} 
+\index{Program.cs@{Program.cs}!UseWebSockets@{UseWebSockets}}
+\index{UseWebSockets@{UseWebSockets}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseWebSockets()}{UseWebSockets()}}
+{\footnotesize\ttfamily app. Use\+Web\+Sockets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}\label{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d} 
+\index{Program.cs@{Program.cs}!app@{app}}
+\index{app@{app}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily var app = builder.\+Build()}
+
+\Hypertarget{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}\label{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5} 
+\index{Program.cs@{Program.cs}!builder@{builder}}
+\index{builder@{builder}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{builder}{builder}}
+{\footnotesize\ttfamily var builder = Web\+Application.\+Create\+Builder(args)}
+
+\Hypertarget{_program_8cs_ab403e88659a33805fd81d514a577da6c}\label{_program_8cs_ab403e88659a33805fd81d514a577da6c} 
+\index{Program.cs@{Program.cs}!initService@{initService}}
+\index{initService@{initService}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{initService}{initService}}
+{\footnotesize\ttfamily var init\+Service = app.\+Services.\+Get\+Required\+Service$<$\mbox{\hyperlink{classtesting_environment_app_1_1_hosted_service_1_1_initialization_hosted_service}{Initialization\+Hosted\+Service}}$>$()}
+
+\Hypertarget{_program_8cs_acc69707810d1669872f8199f16a0da20}\label{_program_8cs_acc69707810d1669872f8199f16a0da20} 
+\index{Program.cs@{Program.cs}!logger@{logger}}
+\index{logger@{logger}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily var logger = app.\+Services.\+Get\+Required\+Service$<$ILogger$<$Program$>$$>$()}
+
+\Hypertarget{_program_8cs_a9e67927e82483d20b1d72d10bc0a0b0f}\label{_program_8cs_a9e67927e82483d20b1d72d10bc0a0b0f} 
+\index{Program.cs@{Program.cs}!mqttService@{mqttService}}
+\index{mqttService@{mqttService}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{mqttService}{mqttService}}
+{\footnotesize\ttfamily var mqtt\+Service = app.\+Services.\+Get\+Required\+Service$<$\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_service}{IMqtt\+Service}}$>$() as \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service}{Mqtt\+Service}}}
+
+\Hypertarget{_program_8cs_abe4cc9788f52e49485473dc699537388}\label{_program_8cs_abe4cc9788f52e49485473dc699537388} 
+\index{Program.cs@{Program.cs}!try@{try}}
+\index{try@{try}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{try}{try}}
+{\footnotesize\ttfamily try}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_program_8cs_acc69707810d1669872f8199f16a0da20}{logger}}.LogInformation(\textcolor{stringliteral}{"{}Rozpoczynanie\ inicjalizacji\ serwisu\ XYZ..."{}})}
+
+\end{DoxyCode}

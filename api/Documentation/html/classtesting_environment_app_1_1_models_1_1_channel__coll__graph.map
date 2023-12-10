@@ -1,0 +1,9 @@
+<map id="testingEnvironmentApp.Models.Channel" name="testingEnvironmentApp.Models.Channel">
+<area shape="rect" id="Node000001" title="Klasa Channel reprezentuje czujnik w systemie, przechowujący informacje o stanie czujnika...." alt="" coords="79,187,275,507"/>
+<area shape="rect" id="Node000002" href="$interfacetesting_environment_app_1_1_models_1_1_devices_1_1_interfaces_1_1_i_has_pv.html" title="Interfejs IHasPv definiuje właściwość Pv (wartość procesu)." alt="" coords="5,37,59,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,118,95,186,90,188,54,121"/>
+<area shape="rect" id="Node000003" href="$interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable.html" title="Interfejs IAlarmable definiuje funkcjonalność potrzebną do obsługi alarmów." alt="" coords="83,5,272,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,154,180,187,175,187,175,154"/>
+<area shape="rect" id="Node000004" href="$interfacetesting_environment_app_1_1_models_1_1_interfaces_1_1_i_historable.html" title="Interfejs IHistorable określa, czy czujnik powinien być historiowany." alt="" coords="296,37,435,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="336,120,277,205,273,202,332,117"/>
+</map>

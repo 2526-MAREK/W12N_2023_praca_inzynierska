@@ -1,0 +1,108 @@
+\doxysection{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+Service Interface Reference}
+\hypertarget{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service}{}\label{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service}\index{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService}}
+
+
+Interfejs dla usługi kolejki wiadomości. Definiuje podstawowe operacje na kolejce, takie jak dodawanie i pobieranie wiadomości oraz zarządzanie kolejką.  
+
+
+
+
+Inheritance diagram for testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+Service\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes6f3be007af63a7798e63202198a2939c}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+Service\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Blocking\+Collection$<$ string $>$ $>$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_abc0057d77186c74a7772721ebe8c9c22}{Get\+Messages\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca listę kolekcji blokujących zawierających wiadomości. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_abf55afe1c295ad933c6de1b51edf65d7}{Enqueue\+Async}} (string queue\+Name, string message)
+\item 
+Task$<$ string $>$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_a9d99a1af573836a8f90f23cd186c453c}{Dequeue\+Async}} (string queue\+Name)
+\item 
+void \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_a11961225dfa20bb103a61a84a3d1888b}{Clear\+Queue}} (string queue\+Name)
+\item 
+void \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_a9d2ecc20ab26021d31121c4a9e7ba0cf}{Clear\+All\+Queues}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interfejs dla usługi kolejki wiadomości. Definiuje podstawowe operacje na kolejce, takie jak dodawanie i pobieranie wiadomości oraz zarządzanie kolejką. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_a9d2ecc20ab26021d31121c4a9e7ba0cf}\label{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_a9d2ecc20ab26021d31121c4a9e7ba0cf} 
+\index{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService}!ClearAllQueues@{ClearAllQueues}}
+\index{ClearAllQueues@{ClearAllQueues}!testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService}}
+\doxysubsubsection{\texorpdfstring{ClearAllQueues()}{ClearAllQueues()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+Service.\+Clear\+All\+Queues (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_ac311f331ae1ce542eaeed83023fadf68}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Service}}.
+
+\Hypertarget{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_a11961225dfa20bb103a61a84a3d1888b}\label{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_a11961225dfa20bb103a61a84a3d1888b} 
+\index{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService}!ClearQueue@{ClearQueue}}
+\index{ClearQueue@{ClearQueue}!testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService}}
+\doxysubsubsection{\texorpdfstring{ClearQueue()}{ClearQueue()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+Service.\+Clear\+Queue (\begin{DoxyParamCaption}\item[{string}]{queue\+Name }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_abce222fe60f9883c5f9646e59c676e3d}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Service}}.
+
+\Hypertarget{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_a9d99a1af573836a8f90f23cd186c453c}\label{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_a9d99a1af573836a8f90f23cd186c453c} 
+\index{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService}!DequeueAsync@{DequeueAsync}}
+\index{DequeueAsync@{DequeueAsync}!testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService}}
+\doxysubsubsection{\texorpdfstring{DequeueAsync()}{DequeueAsync()}}
+{\footnotesize\ttfamily Task$<$ string $>$ testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+Service.\+Dequeue\+Async (\begin{DoxyParamCaption}\item[{string}]{queue\+Name }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_a31a3ecd384808084349d977dabb788c3}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Service}}.
+
+\Hypertarget{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_abf55afe1c295ad933c6de1b51edf65d7}\label{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_abf55afe1c295ad933c6de1b51edf65d7} 
+\index{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService}!EnqueueAsync@{EnqueueAsync}}
+\index{EnqueueAsync@{EnqueueAsync}!testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService}}
+\doxysubsubsection{\texorpdfstring{EnqueueAsync()}{EnqueueAsync()}}
+{\footnotesize\ttfamily Task testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+Service.\+Enqueue\+Async (\begin{DoxyParamCaption}\item[{string}]{queue\+Name,  }\item[{string}]{message }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_a457d2ab390484e35fbffaf5dc9be9b9a}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Service}}.
+
+\Hypertarget{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_abc0057d77186c74a7772721ebe8c9c22}\label{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_abc0057d77186c74a7772721ebe8c9c22} 
+\index{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService}!GetMessagesQueue@{GetMessagesQueue}}
+\index{GetMessagesQueue@{GetMessagesQueue}!testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueService}}
+\doxysubsubsection{\texorpdfstring{GetMessagesQueue()}{GetMessagesQueue()}}
+{\footnotesize\ttfamily List$<$ Blocking\+Collection$<$ string $>$ $>$ testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+Service.\+Get\+Messages\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwraca listę kolekcji blokujących zawierających wiadomości. 
+
+\begin{DoxyReturn}{Returns}
+Listę kolekcji blokujących z wiadomościami.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_a44fd3fcf17130cd3990e8e07707b9221}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Service}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+testing\+Environment\+App/\+Services/\+Message\+Queue\+Service/\+Interfaces/\mbox{\hyperlink{_i_message_queue_service_8cs}{IMessage\+Queue\+Service.\+cs}}\end{DoxyCompactItemize}

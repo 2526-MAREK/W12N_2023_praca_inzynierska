@@ -1,0 +1,114 @@
+\doxysection{testing\+Environment\+App.\+Models.\+Alarms.\+Interfaces.\+IAlarmable Interface Reference}
+\hypertarget{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable}{}\label{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable}\index{testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable@{testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable}}
+
+
+Interfejs IAlarmable definiuje funkcjonalność potrzebną do obsługi alarmów.  
+
+
+
+
+Inheritance diagram for testing\+Environment\+App.\+Models.\+Alarms.\+Interfaces.\+IAlarmable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+Environment\+App.\+Models.\+Alarms.\+Interfaces.\+IAlarmable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IEnumerable$<$ \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_alarms_1_1_alarm}{Alarm}} $>$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable_a3cba30f20ec1cf6cf7c3e1e7b8b865f0}{Check\+Alarms}} ()
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy wartości czujnika przekraczają progi alarmowe i generuje nowe alarmy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_alarms_1_1_alarm_range}{Alarm\+Range}} \mbox{\hyperlink{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable_acf60039f4a863b46063915c59ae9733a}{Range}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable_a3541f91f1259d8706f53b326f20f3df9}{Pv}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable_aad9cc8942bd23b67a4f376d562792acb}{Is\+Acknowledged\+Urgent\+Alarm}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespacetesting_environment_app_1_1_models_1_1_alarms_aa63e3b8bb56b31e888e94a98eed576b4}{Alarm\+Status}} \mbox{\hyperlink{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable_a3467a7a84e9560f03166c765fe311d14}{Actual\+Status\+Alarm}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interfejs IAlarmable definiuje funkcjonalność potrzebną do obsługi alarmów. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable_a3cba30f20ec1cf6cf7c3e1e7b8b865f0}\label{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable_a3cba30f20ec1cf6cf7c3e1e7b8b865f0} 
+\index{testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable@{testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable}!CheckAlarms@{CheckAlarms}}
+\index{CheckAlarms@{CheckAlarms}!testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable@{testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable}}
+\doxysubsubsection{\texorpdfstring{CheckAlarms()}{CheckAlarms()}}
+{\footnotesize\ttfamily IEnumerable$<$ \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_alarms_1_1_alarm}{Alarm}} $>$ testing\+Environment\+App.\+Models.\+Alarms.\+Interfaces.\+IAlarmable.\+Check\+Alarms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sprawdza, czy wartości czujnika przekraczają progi alarmowe i generuje nowe alarmy. 
+
+\begin{DoxyReturn}{Returns}
+Zwraca kolekcję alarmów.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel_a129804addd7cf66fb63a46ed3d392d2c}{testing\+Environment\+App.\+Models.\+Channel}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable_a3467a7a84e9560f03166c765fe311d14}\label{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable_a3467a7a84e9560f03166c765fe311d14} 
+\index{testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable@{testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable}!ActualStatusAlarm@{ActualStatusAlarm}}
+\index{ActualStatusAlarm@{ActualStatusAlarm}!testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable@{testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable}}
+\doxysubsubsection{\texorpdfstring{ActualStatusAlarm}{ActualStatusAlarm}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacetesting_environment_app_1_1_models_1_1_alarms_aa63e3b8bb56b31e888e94a98eed576b4}{Alarm\+Status}} testing\+Environment\+App.\+Models.\+Alarms.\+Interfaces.\+IAlarmable.\+Actual\+Status\+Alarm\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implemented in \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel_adf2052a6f8c13040422733afef5a5bca}{testing\+Environment\+App.\+Models.\+Channel}}.
+
+\Hypertarget{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable_aad9cc8942bd23b67a4f376d562792acb}\label{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable_aad9cc8942bd23b67a4f376d562792acb} 
+\index{testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable@{testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable}!IsAcknowledgedUrgentAlarm@{IsAcknowledgedUrgentAlarm}}
+\index{IsAcknowledgedUrgentAlarm@{IsAcknowledgedUrgentAlarm}!testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable@{testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable}}
+\doxysubsubsection{\texorpdfstring{IsAcknowledgedUrgentAlarm}{IsAcknowledgedUrgentAlarm}}
+{\footnotesize\ttfamily bool testing\+Environment\+App.\+Models.\+Alarms.\+Interfaces.\+IAlarmable.\+Is\+Acknowledged\+Urgent\+Alarm\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implemented in \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel_a7c0f9b95891cd2a5a17a9157b3f5426d}{testing\+Environment\+App.\+Models.\+Channel}}.
+
+\Hypertarget{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable_a3541f91f1259d8706f53b326f20f3df9}\label{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable_a3541f91f1259d8706f53b326f20f3df9} 
+\index{testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable@{testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable}!Pv@{Pv}}
+\index{Pv@{Pv}!testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable@{testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable}}
+\doxysubsubsection{\texorpdfstring{Pv}{Pv}}
+{\footnotesize\ttfamily double testing\+Environment\+App.\+Models.\+Alarms.\+Interfaces.\+IAlarmable.\+Pv\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implemented in \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel_aad45e4c8e96c2cafd6b72509ae10b52d}{testing\+Environment\+App.\+Models.\+Channel}}.
+
+\Hypertarget{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable_acf60039f4a863b46063915c59ae9733a}\label{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable_acf60039f4a863b46063915c59ae9733a} 
+\index{testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable@{testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable}!Range@{Range}}
+\index{Range@{Range}!testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable@{testingEnvironmentApp.Models.Alarms.Interfaces.IAlarmable}}
+\doxysubsubsection{\texorpdfstring{Range}{Range}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_alarms_1_1_alarm_range}{Alarm\+Range}} testing\+Environment\+App.\+Models.\+Alarms.\+Interfaces.\+IAlarmable.\+Range\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implemented in \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel_a881b8929b77b789f6e13f21d2403b328}{testing\+Environment\+App.\+Models.\+Channel}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+testing\+Environment\+App/\+Models/\+Alarms/\+Interfaces/\mbox{\hyperlink{_i_alarmable_8cs}{IAlarmable.\+cs}}\end{DoxyCompactItemize}

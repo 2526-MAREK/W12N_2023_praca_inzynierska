@@ -1,0 +1,5 @@
+<map id="testingEnvironmentApp.Models.Interfaces.IHistorable" name="testingEnvironmentApp.Models.Interfaces.IHistorable">
+<area shape="rect" id="Node000001" title="Interfejs IHistorable określa, czy czujnik powinien być historiowany." alt="" coords="5,5,201,91"/>
+<area shape="rect" id="Node000002" href="$classtesting_environment_app_1_1_models_1_1_channel.html" title="Klasa Channel reprezentuje czujnik w systemie, przechowujący informacje o stanie czujnika...." alt="" coords="5,139,201,459"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,105,106,139,101,139,101,105"/>
+</map>

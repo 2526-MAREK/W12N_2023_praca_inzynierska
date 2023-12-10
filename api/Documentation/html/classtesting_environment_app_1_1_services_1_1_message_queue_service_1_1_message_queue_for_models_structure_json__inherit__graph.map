@@ -1,0 +1,10 @@
+<map id="testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson" name="testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson">
+<area shape="rect" id="Node000001" title=" " alt="" coords="72,453,332,656"/>
+<area shape="rect" id="Node000002" href="$classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service.html" title="Abstrakcyjna klasa bazowa dla usług kolejki wiadomości. Zapewnia podstawową implementację operacji na..." alt="" coords="5,208,169,405"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,418,158,453,153,455,137,420"/>
+<area shape="rect" id="Node000003" href="$interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service.html" title="Interfejs dla usługi kolejki wiadomości. Definiuje podstawowe operacje na kolejce,..." alt="" coords="127,5,277,160"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="158,174,140,209,135,207,154,172"/>
+<area shape="rect" id="Node000004" href="$interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f.html" title=" " alt="" coords="194,240,442,373"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="251,171,286,239,281,241,246,174"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="283,388,252,455,247,453,278,386"/>
+</map>

@@ -1,0 +1,161 @@
+\doxysection{testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Service Class Reference}
+\hypertarget{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service}{}\label{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service}\index{testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}}
+
+
+Inheritance diagram for testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Service\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Service\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_abe93f02d68c6046915ee9b913c6a8ba0}{Mqtt\+Service}} (\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes8dbc3a2adaf867707d201e1f85e36179}{IMessage\+Queue\+Value\+Device\+For\+Web\+Socket\+Device}} message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device, \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221}{IMessage\+Queue\+Value\+Device\+For\+Device\+Manager}} message\+Queue\+Value\+Device\+For\+Device\+Manager, \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory}{IChannel\+Factory}} channel\+Factory, \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_for_json_fact3e645115c4956e2671f2d00e70725cff}{IDevice\+Value\+Json\+Factory}} device\+Value\+Json\+Factory, \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mesb7e3cff71b64380c2f7bec947ecd8f26}{IMessage\+Queue\+For\+Msrt\+Save\+To\+Data\+Base}} message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a741f4b3050a302b22f341224a30f25cf}{Add\+Topics\+Async}} (List$<$ string $>$ topics)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a015931924a255d73a73f03d94154c140}{Send\+Messages\+In\+Parallel\+Async}} (List$<$ string $>$ split\+Jsons)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_aedaa82259b554042f484f3c506f33031}{Start\+Async}} (Cancellation\+Token cancellation\+Token)
+\item 
+Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a58da0c408338821536170bc586516331}{Stop\+Async}} (Cancellation\+Token cancellation\+Token)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a5c12595b49b96e8ad5c42dbd35d12dd0}{Handle\+Message\+Received}} (Mqtt\+Application\+Message\+Received\+Event\+Args arg)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+IMqtt\+Client \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a9b4d6afa065aa87924e02108f69c4daf}{\+\_\+client}}
+\item 
+IMqtt\+Client\+Options \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_ab71965a3f142af8207b02d1c4a4fd81e}{\+\_\+options}}
+\item 
+\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes8dbc3a2adaf867707d201e1f85e36179}{IMessage\+Queue\+Value\+Device\+For\+Web\+Socket\+Device}} \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_ad8f88fc391e2196ff720441eab1cefd4}{\+\_\+message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device}}
+\item 
+\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221}{IMessage\+Queue\+Value\+Device\+For\+Device\+Manager}} \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a95076802eb2b57a5e1441ff41599442b}{\+\_\+message\+Queue\+Value\+Device\+For\+Device\+Manager}}
+\item 
+\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mesb7e3cff71b64380c2f7bec947ecd8f26}{IMessage\+Queue\+For\+Msrt\+Save\+To\+Data\+Base}} \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a2832f53f1e1d871387eb53cef5f2db59}{\+\_\+message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base}}
+\item 
+\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory}{IChannel\+Factory}} \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a8d1dc509a9609a7db85d4148bd98b09c}{\+\_\+channel\+Factory}}
+\item 
+\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_for_json_fact3e645115c4956e2671f2d00e70725cff}{IDevice\+Value\+Json\+Factory}} \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a4ff55230d02cc8eca3f6114d5b1edebb}{\+\_\+device\+Value\+Json\+Factory}}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_aab6d457e289a7deef251ccdea18f5cba}{\+\_\+topics\+To\+Subscribe}} = new List$<$string$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_abe93f02d68c6046915ee9b913c6a8ba0}\label{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_abe93f02d68c6046915ee9b913c6a8ba0} 
+\index{testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}!MqttService@{MqttService}}
+\index{MqttService@{MqttService}!testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}}
+\doxysubsubsection{\texorpdfstring{MqttService()}{MqttService()}}
+{\footnotesize\ttfamily testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Service.\+Mqtt\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes8dbc3a2adaf867707d201e1f85e36179}{IMessage\+Queue\+Value\+Device\+For\+Web\+Socket\+Device}}}]{message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device,  }\item[{\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221}{IMessage\+Queue\+Value\+Device\+For\+Device\+Manager}}}]{message\+Queue\+Value\+Device\+For\+Device\+Manager,  }\item[{\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory}{IChannel\+Factory}}}]{channel\+Factory,  }\item[{\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_for_json_fact3e645115c4956e2671f2d00e70725cff}{IDevice\+Value\+Json\+Factory}}}]{device\+Value\+Json\+Factory,  }\item[{\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mesb7e3cff71b64380c2f7bec947ecd8f26}{IMessage\+Queue\+For\+Msrt\+Save\+To\+Data\+Base}}}]{message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a741f4b3050a302b22f341224a30f25cf}\label{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a741f4b3050a302b22f341224a30f25cf} 
+\index{testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}!AddTopicsAsync@{AddTopicsAsync}}
+\index{AddTopicsAsync@{AddTopicsAsync}!testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}}
+\doxysubsubsection{\texorpdfstring{AddTopicsAsync()}{AddTopicsAsync()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Service.\+Add\+Topics\+Async (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{topics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_service_afe19274fc130883d34865372ae6889dc}{testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Interfaces.\+IMqtt\+Service}}.
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a5c12595b49b96e8ad5c42dbd35d12dd0}\label{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a5c12595b49b96e8ad5c42dbd35d12dd0} 
+\index{testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}!HandleMessageReceived@{HandleMessageReceived}}
+\index{HandleMessageReceived@{HandleMessageReceived}!testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}}
+\doxysubsubsection{\texorpdfstring{HandleMessageReceived()}{HandleMessageReceived()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Service.\+Handle\+Message\+Received (\begin{DoxyParamCaption}\item[{Mqtt\+Application\+Message\+Received\+Event\+Args}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a015931924a255d73a73f03d94154c140}\label{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a015931924a255d73a73f03d94154c140} 
+\index{testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}!SendMessagesInParallelAsync@{SendMessagesInParallelAsync}}
+\index{SendMessagesInParallelAsync@{SendMessagesInParallelAsync}!testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}}
+\doxysubsubsection{\texorpdfstring{SendMessagesInParallelAsync()}{SendMessagesInParallelAsync()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Service.\+Send\+Messages\+In\+Parallel\+Async (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{split\+Jsons }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_aedaa82259b554042f484f3c506f33031}\label{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_aedaa82259b554042f484f3c506f33031} 
+\index{testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}!StartAsync@{StartAsync}}
+\index{StartAsync@{StartAsync}!testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}}
+\doxysubsubsection{\texorpdfstring{StartAsync()}{StartAsync()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Service.\+Start\+Async (\begin{DoxyParamCaption}\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a58da0c408338821536170bc586516331}\label{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a58da0c408338821536170bc586516331} 
+\index{testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}!StopAsync@{StopAsync}}
+\index{StopAsync@{StopAsync}!testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}}
+\doxysubsubsection{\texorpdfstring{StopAsync()}{StopAsync()}}
+{\footnotesize\ttfamily Task testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Service.\+Stop\+Async (\begin{DoxyParamCaption}\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a8d1dc509a9609a7db85d4148bd98b09c}\label{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a8d1dc509a9609a7db85d4148bd98b09c} 
+\index{testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}!\_channelFactory@{\_channelFactory}}
+\index{\_channelFactory@{\_channelFactory}!testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}}
+\doxysubsubsection{\texorpdfstring{\_channelFactory}{\_channelFactory}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory}{IChannel\+Factory}} testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Service.\+\_\+channel\+Factory\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a9b4d6afa065aa87924e02108f69c4daf}\label{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a9b4d6afa065aa87924e02108f69c4daf} 
+\index{testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}!\_client@{\_client}}
+\index{\_client@{\_client}!testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}}
+\doxysubsubsection{\texorpdfstring{\_client}{\_client}}
+{\footnotesize\ttfamily IMqtt\+Client testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Service.\+\_\+client\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a4ff55230d02cc8eca3f6114d5b1edebb}\label{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a4ff55230d02cc8eca3f6114d5b1edebb} 
+\index{testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}!\_deviceValueJsonFactory@{\_deviceValueJsonFactory}}
+\index{\_deviceValueJsonFactory@{\_deviceValueJsonFactory}!testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}}
+\doxysubsubsection{\texorpdfstring{\_deviceValueJsonFactory}{\_deviceValueJsonFactory}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_for_json_fact3e645115c4956e2671f2d00e70725cff}{IDevice\+Value\+Json\+Factory}} testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Service.\+\_\+device\+Value\+Json\+Factory\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a2832f53f1e1d871387eb53cef5f2db59}\label{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a2832f53f1e1d871387eb53cef5f2db59} 
+\index{testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}!\_messageQueueForMsrtSaveToDataBase@{\_messageQueueForMsrtSaveToDataBase}}
+\index{\_messageQueueForMsrtSaveToDataBase@{\_messageQueueForMsrtSaveToDataBase}!testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}}
+\doxysubsubsection{\texorpdfstring{\_messageQueueForMsrtSaveToDataBase}{\_messageQueueForMsrtSaveToDataBase}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mesb7e3cff71b64380c2f7bec947ecd8f26}{IMessage\+Queue\+For\+Msrt\+Save\+To\+Data\+Base}} testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Service.\+\_\+message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a95076802eb2b57a5e1441ff41599442b}\label{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_a95076802eb2b57a5e1441ff41599442b} 
+\index{testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}!\_messageQueueValueDeviceForDeviceManager@{\_messageQueueValueDeviceForDeviceManager}}
+\index{\_messageQueueValueDeviceForDeviceManager@{\_messageQueueValueDeviceForDeviceManager}!testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}}
+\doxysubsubsection{\texorpdfstring{\_messageQueueValueDeviceForDeviceManager}{\_messageQueueValueDeviceForDeviceManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221}{IMessage\+Queue\+Value\+Device\+For\+Device\+Manager}} testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Service.\+\_\+message\+Queue\+Value\+Device\+For\+Device\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_ad8f88fc391e2196ff720441eab1cefd4}\label{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_ad8f88fc391e2196ff720441eab1cefd4} 
+\index{testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}!\_messageQueueValueDeviceForWebSocketDevice@{\_messageQueueValueDeviceForWebSocketDevice}}
+\index{\_messageQueueValueDeviceForWebSocketDevice@{\_messageQueueValueDeviceForWebSocketDevice}!testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}}
+\doxysubsubsection{\texorpdfstring{\_messageQueueValueDeviceForWebSocketDevice}{\_messageQueueValueDeviceForWebSocketDevice}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes8dbc3a2adaf867707d201e1f85e36179}{IMessage\+Queue\+Value\+Device\+For\+Web\+Socket\+Device}} testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Service.\+\_\+message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_ab71965a3f142af8207b02d1c4a4fd81e}\label{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_ab71965a3f142af8207b02d1c4a4fd81e} 
+\index{testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}!\_options@{\_options}}
+\index{\_options@{\_options}!testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}}
+\doxysubsubsection{\texorpdfstring{\_options}{\_options}}
+{\footnotesize\ttfamily IMqtt\+Client\+Options testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Service.\+\_\+options\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_aab6d457e289a7deef251ccdea18f5cba}\label{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_service_aab6d457e289a7deef251ccdea18f5cba} 
+\index{testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}!\_topicsToSubscribe@{\_topicsToSubscribe}}
+\index{\_topicsToSubscribe@{\_topicsToSubscribe}!testingEnvironmentApp.Services.MqttService.MqttService@{testingEnvironmentApp.Services.MqttService.MqttService}}
+\doxysubsubsection{\texorpdfstring{\_topicsToSubscribe}{\_topicsToSubscribe}}
+{\footnotesize\ttfamily List$<$string$>$ testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Service.\+\_\+topics\+To\+Subscribe = new List$<$string$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+testing\+Environment\+App/\+Services/\+Mqtt\+Service/\mbox{\hyperlink{_mqtt_service_8cs}{Mqtt\+Service.\+cs}}\end{DoxyCompactItemize}

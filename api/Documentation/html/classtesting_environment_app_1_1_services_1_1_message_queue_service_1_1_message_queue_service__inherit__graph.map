@@ -1,0 +1,13 @@
+<map id="testingEnvironmentApp.Services.MessageQueueService.MessageQueueService" name="testingEnvironmentApp.Services.MessageQueueService.MessageQueueService">
+<area shape="rect" id="Node000001" title="Abstrakcyjna klasa bazowa dla usług kolejki wiadomości. Zapewnia podstawową implementację operacji na..." alt="" coords="423,208,706,421"/>
+<area shape="rect" id="Node000003" href="$classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json.html" title=" " alt="" coords="5,469,265,672"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="411,396,278,472,266,479,264,474,275,467,409,391"/>
+<area shape="rect" id="Node000004" href="$classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_msrt_save_to_data_base.html" title=" " alt="" coords="289,501,549,640"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="499,435,460,503,456,500,495,433"/>
+<area shape="rect" id="Node000005" href="$classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_device_manager.html" title="Implementacja MessageQueueService, specyficzna dla zarządzania urządzeniami." alt="" coords="573,501,847,640"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="635,433,673,500,669,503,630,435"/>
+<area shape="rect" id="Node000006" href="$classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device.html" title=" " alt="" coords="871,480,1144,661"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="721,390,861,467,879,478,876,482,858,472,718,395"/>
+<area shape="rect" id="Node000002" href="$interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service.html" title="Interfejs dla usługi kolejki wiadomości. Definiuje podstawowe operacje na kolejce,..." alt="" coords="489,5,640,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="567,175,567,208,562,208,562,175"/>
+</map>

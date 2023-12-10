@@ -1,0 +1,193 @@
+\doxysection{testing\+Environment\+App.\+Models.\+Channel Class Reference}
+\hypertarget{classtesting_environment_app_1_1_models_1_1_channel}{}\label{classtesting_environment_app_1_1_models_1_1_channel}\index{testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}}
+
+
+Klasa Channel reprezentuje czujnik w systemie, przechowujący informacje o stanie czujnika. Implementuje interfejsy IHas\+Pv, IAlarmable oraz IHistorable.  
+
+
+
+
+Inheritance diagram for testing\+Environment\+App.\+Models.\+Channel\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtesting_environment_app_1_1_models_1_1_channel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+Environment\+App.\+Models.\+Channel\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtesting_environment_app_1_1_models_1_1_channel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IEnumerable$<$ \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_alarms_1_1_alarm}{Alarm}} $>$ \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel_a129804addd7cf66fb63a46ed3d392d2c}{Check\+Alarms}} ()
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy warunki alarmowe są spełnione i generuje alarmy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel_ad10a8638cbc2fe17acf5c696910f00cf}{Id\+Channel}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel_a7b0d90708cdfd38c45c23977b24abf29}{Id\+Device}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel_ac315a97c8309b6df3ff5d502498cd50a}{Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel_af25cdcdd9a60d0a6529ac2ed454756d6}{Channel\+Identifier}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel_ae7d6ced0e9f332e14f846d792da22d4d}{Unit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel_a27d08277d66b69a9dcbe3abd3b2bcd8f}{Factor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_alarms_1_1_alarm_range}{Alarm\+Range}} \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel_a881b8929b77b789f6e13f21d2403b328}{Range}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel_a28feb6de39ff0a111906c73d7ad297ee}{Is\+Connection\+Ok}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+double \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel_aad45e4c8e96c2cafd6b72509ae10b52d}{Pv}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Wartość procesu dla urządzenia. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel_a7c0f9b95891cd2a5a17a9157b3f5426d}{Is\+Acknowledged\+Urgent\+Alarm}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespacetesting_environment_app_1_1_models_1_1_alarms_aa63e3b8bb56b31e888e94a98eed576b4}{Alarm\+Status}} \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel_adf2052a6f8c13040422733afef5a5bca}{Actual\+Status\+Alarm}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel_a145a224c65065d150508e33628488b89}{Channel\+Is\+Historable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa, czy czujnik jest historiowany. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interfacetesting_environment_app_1_1_models_1_1_devices_1_1_interfaces_1_1_i_has_pv}{testing\+Environment\+App.\+Models.\+Devices.\+Interfaces.\+IHas\+Pv}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable}{testing\+Environment\+App.\+Models.\+Alarms.\+Interfaces.\+IAlarmable}}}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interfacetesting_environment_app_1_1_models_1_1_interfaces_1_1_i_historable}{testing\+Environment\+App.\+Models.\+Interfaces.\+IHistorable}}}
+
+
+\doxysubsection{Detailed Description}
+Klasa Channel reprezentuje czujnik w systemie, przechowujący informacje o stanie czujnika. Implementuje interfejsy IHas\+Pv, IAlarmable oraz IHistorable. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtesting_environment_app_1_1_models_1_1_channel_a129804addd7cf66fb63a46ed3d392d2c}\label{classtesting_environment_app_1_1_models_1_1_channel_a129804addd7cf66fb63a46ed3d392d2c} 
+\index{testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}!CheckAlarms@{CheckAlarms}}
+\index{CheckAlarms@{CheckAlarms}!testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}}
+\doxysubsubsection{\texorpdfstring{CheckAlarms()}{CheckAlarms()}}
+{\footnotesize\ttfamily IEnumerable$<$ \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_alarms_1_1_alarm}{Alarm}} $>$ testing\+Environment\+App.\+Models.\+Channel.\+Check\+Alarms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sprawdza, czy warunki alarmowe są spełnione i generuje alarmy. 
+
+\begin{DoxyReturn}{Returns}
+Zwraca listę wygenerowanych alarmów.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable_a3cba30f20ec1cf6cf7c3e1e7b8b865f0}{testing\+Environment\+App.\+Models.\+Alarms.\+Interfaces.\+IAlarmable}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classtesting_environment_app_1_1_models_1_1_channel_adf2052a6f8c13040422733afef5a5bca}\label{classtesting_environment_app_1_1_models_1_1_channel_adf2052a6f8c13040422733afef5a5bca} 
+\index{testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}!ActualStatusAlarm@{ActualStatusAlarm}}
+\index{ActualStatusAlarm@{ActualStatusAlarm}!testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}}
+\doxysubsubsection{\texorpdfstring{ActualStatusAlarm}{ActualStatusAlarm}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacetesting_environment_app_1_1_models_1_1_alarms_aa63e3b8bb56b31e888e94a98eed576b4}{Alarm\+Status}} testing\+Environment\+App.\+Models.\+Channel.\+Actual\+Status\+Alarm\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable_a3467a7a84e9560f03166c765fe311d14}{testing\+Environment\+App.\+Models.\+Alarms.\+Interfaces.\+IAlarmable}}.
+
+\Hypertarget{classtesting_environment_app_1_1_models_1_1_channel_af25cdcdd9a60d0a6529ac2ed454756d6}\label{classtesting_environment_app_1_1_models_1_1_channel_af25cdcdd9a60d0a6529ac2ed454756d6} 
+\index{testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}!ChannelIdentifier@{ChannelIdentifier}}
+\index{ChannelIdentifier@{ChannelIdentifier}!testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}}
+\doxysubsubsection{\texorpdfstring{ChannelIdentifier}{ChannelIdentifier}}
+{\footnotesize\ttfamily string testing\+Environment\+App.\+Models.\+Channel.\+Channel\+Identifier\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classtesting_environment_app_1_1_models_1_1_channel_a145a224c65065d150508e33628488b89}\label{classtesting_environment_app_1_1_models_1_1_channel_a145a224c65065d150508e33628488b89} 
+\index{testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}!ChannelIsHistorable@{ChannelIsHistorable}}
+\index{ChannelIsHistorable@{ChannelIsHistorable}!testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}}
+\doxysubsubsection{\texorpdfstring{ChannelIsHistorable}{ChannelIsHistorable}}
+{\footnotesize\ttfamily bool testing\+Environment\+App.\+Models.\+Channel.\+Channel\+Is\+Historable\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Określa, czy czujnik jest historiowany. 
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_models_1_1_interfaces_1_1_i_historable_aa490ccb6af305b3808f156e3d26eac45}{testing\+Environment\+App.\+Models.\+Interfaces.\+IHistorable}}.
+
+\Hypertarget{classtesting_environment_app_1_1_models_1_1_channel_a27d08277d66b69a9dcbe3abd3b2bcd8f}\label{classtesting_environment_app_1_1_models_1_1_channel_a27d08277d66b69a9dcbe3abd3b2bcd8f} 
+\index{testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}!Factor@{Factor}}
+\index{Factor@{Factor}!testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}}
+\doxysubsubsection{\texorpdfstring{Factor}{Factor}}
+{\footnotesize\ttfamily string testing\+Environment\+App.\+Models.\+Channel.\+Factor\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classtesting_environment_app_1_1_models_1_1_channel_ad10a8638cbc2fe17acf5c696910f00cf}\label{classtesting_environment_app_1_1_models_1_1_channel_ad10a8638cbc2fe17acf5c696910f00cf} 
+\index{testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}!IdChannel@{IdChannel}}
+\index{IdChannel@{IdChannel}!testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}}
+\doxysubsubsection{\texorpdfstring{IdChannel}{IdChannel}}
+{\footnotesize\ttfamily int testing\+Environment\+App.\+Models.\+Channel.\+Id\+Channel\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classtesting_environment_app_1_1_models_1_1_channel_a7b0d90708cdfd38c45c23977b24abf29}\label{classtesting_environment_app_1_1_models_1_1_channel_a7b0d90708cdfd38c45c23977b24abf29} 
+\index{testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}!IdDevice@{IdDevice}}
+\index{IdDevice@{IdDevice}!testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}}
+\doxysubsubsection{\texorpdfstring{IdDevice}{IdDevice}}
+{\footnotesize\ttfamily int testing\+Environment\+App.\+Models.\+Channel.\+Id\+Device\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classtesting_environment_app_1_1_models_1_1_channel_a7c0f9b95891cd2a5a17a9157b3f5426d}\label{classtesting_environment_app_1_1_models_1_1_channel_a7c0f9b95891cd2a5a17a9157b3f5426d} 
+\index{testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}!IsAcknowledgedUrgentAlarm@{IsAcknowledgedUrgentAlarm}}
+\index{IsAcknowledgedUrgentAlarm@{IsAcknowledgedUrgentAlarm}!testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}}
+\doxysubsubsection{\texorpdfstring{IsAcknowledgedUrgentAlarm}{IsAcknowledgedUrgentAlarm}}
+{\footnotesize\ttfamily bool testing\+Environment\+App.\+Models.\+Channel.\+Is\+Acknowledged\+Urgent\+Alarm\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable_aad9cc8942bd23b67a4f376d562792acb}{testing\+Environment\+App.\+Models.\+Alarms.\+Interfaces.\+IAlarmable}}.
+
+\Hypertarget{classtesting_environment_app_1_1_models_1_1_channel_a28feb6de39ff0a111906c73d7ad297ee}\label{classtesting_environment_app_1_1_models_1_1_channel_a28feb6de39ff0a111906c73d7ad297ee} 
+\index{testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}!IsConnectionOk@{IsConnectionOk}}
+\index{IsConnectionOk@{IsConnectionOk}!testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}}
+\doxysubsubsection{\texorpdfstring{IsConnectionOk}{IsConnectionOk}}
+{\footnotesize\ttfamily bool testing\+Environment\+App.\+Models.\+Channel.\+Is\+Connection\+Ok\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classtesting_environment_app_1_1_models_1_1_channel_aad45e4c8e96c2cafd6b72509ae10b52d}\label{classtesting_environment_app_1_1_models_1_1_channel_aad45e4c8e96c2cafd6b72509ae10b52d} 
+\index{testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}!Pv@{Pv}}
+\index{Pv@{Pv}!testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}}
+\doxysubsubsection{\texorpdfstring{Pv}{Pv}}
+{\footnotesize\ttfamily double testing\+Environment\+App.\+Models.\+Channel.\+Pv\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Wartość procesu dla urządzenia. 
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_models_1_1_devices_1_1_interfaces_1_1_i_has_pv_a1c9a2995e8f7b1ed31e87e5ac3ec6f50}{testing\+Environment\+App.\+Models.\+Devices.\+Interfaces.\+IHas\+Pv}}.
+
+\Hypertarget{classtesting_environment_app_1_1_models_1_1_channel_a881b8929b77b789f6e13f21d2403b328}\label{classtesting_environment_app_1_1_models_1_1_channel_a881b8929b77b789f6e13f21d2403b328} 
+\index{testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}!Range@{Range}}
+\index{Range@{Range}!testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}}
+\doxysubsubsection{\texorpdfstring{Range}{Range}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_alarms_1_1_alarm_range}{Alarm\+Range}} testing\+Environment\+App.\+Models.\+Channel.\+Range\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_models_1_1_alarms_1_1_interfaces_1_1_i_alarmable_acf60039f4a863b46063915c59ae9733a}{testing\+Environment\+App.\+Models.\+Alarms.\+Interfaces.\+IAlarmable}}.
+
+\Hypertarget{classtesting_environment_app_1_1_models_1_1_channel_ac315a97c8309b6df3ff5d502498cd50a}\label{classtesting_environment_app_1_1_models_1_1_channel_ac315a97c8309b6df3ff5d502498cd50a} 
+\index{testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}!Type@{Type}}
+\index{Type@{Type}!testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily string testing\+Environment\+App.\+Models.\+Channel.\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{classtesting_environment_app_1_1_models_1_1_channel_ae7d6ced0e9f332e14f846d792da22d4d}\label{classtesting_environment_app_1_1_models_1_1_channel_ae7d6ced0e9f332e14f846d792da22d4d} 
+\index{testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}!Unit@{Unit}}
+\index{Unit@{Unit}!testingEnvironmentApp.Models.Channel@{testingEnvironmentApp.Models.Channel}}
+\doxysubsubsection{\texorpdfstring{Unit}{Unit}}
+{\footnotesize\ttfamily string testing\+Environment\+App.\+Models.\+Channel.\+Unit\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+testing\+Environment\+App/\+Models/\mbox{\hyperlink{_channel_8cs}{Channel.\+cs}}\end{DoxyCompactItemize}

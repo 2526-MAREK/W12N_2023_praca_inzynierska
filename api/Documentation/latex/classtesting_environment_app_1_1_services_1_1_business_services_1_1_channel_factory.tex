@@ -1,0 +1,146 @@
+\doxysection{testing\+Environment\+App.\+Services.\+Business\+Services.\+Channel\+Factory Class Reference}
+\hypertarget{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory}{}\label{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory}\index{testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}}
+
+
+Inheritance diagram for testing\+Environment\+App.\+Services.\+Business\+Services.\+Channel\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+Environment\+App.\+Services.\+Business\+Services.\+Channel\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_ab9493fc748c27515430a5e14dbe5815a}{Channel\+Factory}} (\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_public_subscribe_service_1_1_interfaces_1_1_i_event_bus}{IEvent\+Bus}} event\+Bus)
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_ae8a3aecb8de6d515ce9d571259791af4}{Create}} (string channel\+Key, int id\+Channel, \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_alarms_1_1_alarm_range}{Alarm\+Range}} range, bool is\+Acknowledged\+Urgent\+Alarm, bool is\+Connection\+Ok, \mbox{\hyperlink{namespacetesting_environment_app_1_1_models_1_1_alarms_aa63e3b8bb56b31e888e94a98eed576b4}{Alarm\+Status}} actual\+Status\+Alarm, double pV, bool channel\+Is\+Historable)
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a24b140fb2217345f18aa5ba8fa0d0e8f}{Update\+Pv}} (string key\+Device, double new\+Pv\+Value)
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_aa508468e25bbd6b3886a398e74b36e5f}{Update\+Actual\+Status\+Alarm}} (string key\+Device, \mbox{\hyperlink{namespacetesting_environment_app_1_1_models_1_1_alarms_aa63e3b8bb56b31e888e94a98eed576b4}{Alarm\+Status}} alarm\+Status)
+\item 
+List$<$ \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel}{Channel}} $>$ \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a3799d6a2c47103b6d6b72e497286c355}{Get\+All\+Channels}} ()
+\item 
+List$<$ string $>$ \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a98e12a570923aa2147f84865d096e70f}{Get\+All\+Msrt\+Points\+And\+Channels\+Identifier}} ()
+\item 
+\mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel}{Channel}} \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a30be7bbf48f10615f07ed6f021cb9561}{Get\+Channel\+By\+Channel\+Key}} (string channel\+Key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly Concurrent\+Dictionary$<$ string, \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel}{Channel}} $>$ \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a932a73d5359a8dcba45ca869ad6fa83d}{\+\_\+channels}} = new Concurrent\+Dictionary$<$string, \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel}{Channel}}$>$()
+\item 
+\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_public_subscribe_service_1_1_interfaces_1_1_i_event_bus}{IEvent\+Bus}} \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a6381ebba29ad8c576a49dde613cab9c9}{\+\_\+event\+Bus}}
+\item 
+\mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_helper_1_1_message_helper}{testing\+Environment\+App.\+Services.\+Message\+Helper.\+Message\+Helper}} \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a62b8aa57feec1d5cf90685b37948e916}{message\+Helper}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_ab9493fc748c27515430a5e14dbe5815a}\label{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_ab9493fc748c27515430a5e14dbe5815a} 
+\index{testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}!ChannelFactory@{ChannelFactory}}
+\index{ChannelFactory@{ChannelFactory}!testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}}
+\doxysubsubsection{\texorpdfstring{ChannelFactory()}{ChannelFactory()}}
+{\footnotesize\ttfamily testing\+Environment\+App.\+Services.\+Business\+Services.\+Channel\+Factory.\+Channel\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_public_subscribe_service_1_1_interfaces_1_1_i_event_bus}{IEvent\+Bus}}}]{event\+Bus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_ae8a3aecb8de6d515ce9d571259791af4}\label{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_ae8a3aecb8de6d515ce9d571259791af4} 
+\index{testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}!Create@{Create}}
+\index{Create@{Create}!testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Business\+Services.\+Channel\+Factory.\+Create (\begin{DoxyParamCaption}\item[{string}]{channel\+Key,  }\item[{int}]{id\+Channel,  }\item[{\mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_alarms_1_1_alarm_range}{Alarm\+Range}}}]{range,  }\item[{bool}]{is\+Acknowledged\+Urgent\+Alarm,  }\item[{bool}]{is\+Connection\+Ok,  }\item[{\mbox{\hyperlink{namespacetesting_environment_app_1_1_models_1_1_alarms_aa63e3b8bb56b31e888e94a98eed576b4}{Alarm\+Status}}}]{actual\+Status\+Alarm,  }\item[{double}]{pV,  }\item[{bool}]{channel\+Is\+Historable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory_a7559682e05b90a558715b1beda07b1d7}{testing\+Environment\+App.\+Services.\+Business\+Services.\+Interfaces.\+IChannel\+Factory}}.
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a3799d6a2c47103b6d6b72e497286c355}\label{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a3799d6a2c47103b6d6b72e497286c355} 
+\index{testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}!GetAllChannels@{GetAllChannels}}
+\index{GetAllChannels@{GetAllChannels}!testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}}
+\doxysubsubsection{\texorpdfstring{GetAllChannels()}{GetAllChannels()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel}{Channel}} $>$ testing\+Environment\+App.\+Services.\+Business\+Services.\+Channel\+Factory.\+Get\+All\+Channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory_a7d39937fc25b18ef6db72124ba1721ba}{testing\+Environment\+App.\+Services.\+Business\+Services.\+Interfaces.\+IChannel\+Factory}}.
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a98e12a570923aa2147f84865d096e70f}\label{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a98e12a570923aa2147f84865d096e70f} 
+\index{testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}!GetAllMsrtPointsAndChannelsIdentifier@{GetAllMsrtPointsAndChannelsIdentifier}}
+\index{GetAllMsrtPointsAndChannelsIdentifier@{GetAllMsrtPointsAndChannelsIdentifier}!testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}}
+\doxysubsubsection{\texorpdfstring{GetAllMsrtPointsAndChannelsIdentifier()}{GetAllMsrtPointsAndChannelsIdentifier()}}
+{\footnotesize\ttfamily List$<$ string $>$ testing\+Environment\+App.\+Services.\+Business\+Services.\+Channel\+Factory.\+Get\+All\+Msrt\+Points\+And\+Channels\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory_ad9088a9a7360655a847cf7d5e61631b5}{testing\+Environment\+App.\+Services.\+Business\+Services.\+Interfaces.\+IChannel\+Factory}}.
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a30be7bbf48f10615f07ed6f021cb9561}\label{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a30be7bbf48f10615f07ed6f021cb9561} 
+\index{testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}!GetChannelByChannelKey@{GetChannelByChannelKey}}
+\index{GetChannelByChannelKey@{GetChannelByChannelKey}!testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}}
+\doxysubsubsection{\texorpdfstring{GetChannelByChannelKey()}{GetChannelByChannelKey()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel}{Channel}} testing\+Environment\+App.\+Services.\+Business\+Services.\+Channel\+Factory.\+Get\+Channel\+By\+Channel\+Key (\begin{DoxyParamCaption}\item[{string}]{channel\+Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory_af1dd9aa629a159bf3b5f508ccaa840dd}{testing\+Environment\+App.\+Services.\+Business\+Services.\+Interfaces.\+IChannel\+Factory}}.
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_aa508468e25bbd6b3886a398e74b36e5f}\label{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_aa508468e25bbd6b3886a398e74b36e5f} 
+\index{testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}!UpdateActualStatusAlarm@{UpdateActualStatusAlarm}}
+\index{UpdateActualStatusAlarm@{UpdateActualStatusAlarm}!testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}}
+\doxysubsubsection{\texorpdfstring{UpdateActualStatusAlarm()}{UpdateActualStatusAlarm()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Business\+Services.\+Channel\+Factory.\+Update\+Actual\+Status\+Alarm (\begin{DoxyParamCaption}\item[{string}]{key\+Device,  }\item[{\mbox{\hyperlink{namespacetesting_environment_app_1_1_models_1_1_alarms_aa63e3b8bb56b31e888e94a98eed576b4}{Alarm\+Status}}}]{alarm\+Status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory_a81f6bfa2a2a35b1d576fcb7b7622575c}{testing\+Environment\+App.\+Services.\+Business\+Services.\+Interfaces.\+IChannel\+Factory}}.
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a24b140fb2217345f18aa5ba8fa0d0e8f}\label{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a24b140fb2217345f18aa5ba8fa0d0e8f} 
+\index{testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}!UpdatePv@{UpdatePv}}
+\index{UpdatePv@{UpdatePv}!testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}}
+\doxysubsubsection{\texorpdfstring{UpdatePv()}{UpdatePv()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Business\+Services.\+Channel\+Factory.\+Update\+Pv (\begin{DoxyParamCaption}\item[{string}]{key\+Device,  }\item[{double}]{new\+Pv\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory_a19d2204a61f84e6f9c1378bc30e5cd1e}{testing\+Environment\+App.\+Services.\+Business\+Services.\+Interfaces.\+IChannel\+Factory}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a932a73d5359a8dcba45ca869ad6fa83d}\label{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a932a73d5359a8dcba45ca869ad6fa83d} 
+\index{testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}!\_channels@{\_channels}}
+\index{\_channels@{\_channels}!testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}}
+\doxysubsubsection{\texorpdfstring{\_channels}{\_channels}}
+{\footnotesize\ttfamily readonly Concurrent\+Dictionary$<$string, \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel}{Channel}}$>$ testing\+Environment\+App.\+Services.\+Business\+Services.\+Channel\+Factory.\+\_\+channels = new Concurrent\+Dictionary$<$string, \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_channel}{Channel}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a6381ebba29ad8c576a49dde613cab9c9}\label{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a6381ebba29ad8c576a49dde613cab9c9} 
+\index{testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}!\_eventBus@{\_eventBus}}
+\index{\_eventBus@{\_eventBus}!testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}}
+\doxysubsubsection{\texorpdfstring{\_eventBus}{\_eventBus}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_public_subscribe_service_1_1_interfaces_1_1_i_event_bus}{IEvent\+Bus}} testing\+Environment\+App.\+Services.\+Business\+Services.\+Channel\+Factory.\+\_\+event\+Bus\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a62b8aa57feec1d5cf90685b37948e916}\label{classtesting_environment_app_1_1_services_1_1_business_services_1_1_channel_factory_a62b8aa57feec1d5cf90685b37948e916} 
+\index{testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}!messageHelper@{messageHelper}}
+\index{messageHelper@{messageHelper}!testingEnvironmentApp.Services.BusinessServices.ChannelFactory@{testingEnvironmentApp.Services.BusinessServices.ChannelFactory}}
+\doxysubsubsection{\texorpdfstring{messageHelper}{messageHelper}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_helper_1_1_message_helper}{testing\+Environment\+App.\+Services.\+Message\+Helper.\+Message\+Helper}} testing\+Environment\+App.\+Services.\+Business\+Services.\+Channel\+Factory.\+message\+Helper\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+testing\+Environment\+App/\+Services/\+Business\+Services/\mbox{\hyperlink{_channel_factory_8cs}{Channel\+Factory.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,94 @@
+\doxysection{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+For\+Models\+Structure\+Json Interface Reference}
+\hypertarget{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f}{}\label{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f}\index{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForModelsStructureJson}}
+
+
+Inheritance diagram for testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+For\+Models\+Structure\+Json\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mesa01399ab90103ee47211c0882bd523e8}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+For\+Models\+Structure\+Json\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mese6abbbff1a60069244cf505d13a57897}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f_a1084d8c5d4df61d54307bf7bf0f18d99}{Get\+Currently\+Selected\+Options}} ()
+\item 
+void \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f_a9d867f056211b546dcfe8a0607cf7b0a}{Change\+Currently\+Selected\+Options}} (string currently\+Selected\+Options\+Temp)
+\item 
+void \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f_ab6e1a0456507dfce73ff6540835b8d5c}{Initialize\+Queue}} ()
+\item 
+bool \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f_a42a22142744402d9bffa5713d56b95d6}{Is\+Queue\+Initialized}} (string queue\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Blocking\+Collection$<$ string $>$ $>$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_abc0057d77186c74a7772721ebe8c9c22}{Get\+Messages\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca listę kolekcji blokujących zawierających wiadomości. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_abf55afe1c295ad933c6de1b51edf65d7}{Enqueue\+Async}} (string queue\+Name, string message)
+\item 
+Task$<$ string $>$ \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_a9d99a1af573836a8f90f23cd186c453c}{Dequeue\+Async}} (string queue\+Name)
+\item 
+void \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_a11961225dfa20bb103a61a84a3d1888b}{Clear\+Queue}} (string queue\+Name)
+\item 
+void \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service_a9d2ecc20ab26021d31121c4a9e7ba0cf}{Clear\+All\+Queues}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f_a9d867f056211b546dcfe8a0607cf7b0a}\label{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f_a9d867f056211b546dcfe8a0607cf7b0a} 
+\index{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForModelsStructureJson}!ChangeCurrentlySelectedOptions@{ChangeCurrentlySelectedOptions}}
+\index{ChangeCurrentlySelectedOptions@{ChangeCurrentlySelectedOptions}!testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForModelsStructureJson}}
+\doxysubsubsection{\texorpdfstring{ChangeCurrentlySelectedOptions()}{ChangeCurrentlySelectedOptions()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+For\+Models\+Structure\+Json.\+Change\+Currently\+Selected\+Options (\begin{DoxyParamCaption}\item[{string}]{currently\+Selected\+Options\+Temp }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_ad3b1ef12937694f086a714bab54f3697}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+For\+Models\+Structure\+Json}}.
+
+\Hypertarget{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f_a1084d8c5d4df61d54307bf7bf0f18d99}\label{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f_a1084d8c5d4df61d54307bf7bf0f18d99} 
+\index{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForModelsStructureJson}!GetCurrentlySelectedOptions@{GetCurrentlySelectedOptions}}
+\index{GetCurrentlySelectedOptions@{GetCurrentlySelectedOptions}!testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForModelsStructureJson}}
+\doxysubsubsection{\texorpdfstring{GetCurrentlySelectedOptions()}{GetCurrentlySelectedOptions()}}
+{\footnotesize\ttfamily string testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+For\+Models\+Structure\+Json.\+Get\+Currently\+Selected\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_ac7f7125d142107ab37e5dab8127fe042}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+For\+Models\+Structure\+Json}}.
+
+\Hypertarget{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f_ab6e1a0456507dfce73ff6540835b8d5c}\label{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f_ab6e1a0456507dfce73ff6540835b8d5c} 
+\index{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForModelsStructureJson}!InitializeQueue@{InitializeQueue}}
+\index{InitializeQueue@{InitializeQueue}!testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForModelsStructureJson}}
+\doxysubsubsection{\texorpdfstring{InitializeQueue()}{InitializeQueue()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+For\+Models\+Structure\+Json.\+Initialize\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_ac313858a7afd118cb2c99a213ccea090}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+For\+Models\+Structure\+Json}}.
+
+\Hypertarget{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f_a42a22142744402d9bffa5713d56b95d6}\label{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f_a42a22142744402d9bffa5713d56b95d6} 
+\index{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForModelsStructureJson}!IsQueueInitialized@{IsQueueInitialized}}
+\index{IsQueueInitialized@{IsQueueInitialized}!testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.Interfaces.IMessageQueueForModelsStructureJson}}
+\doxysubsubsection{\texorpdfstring{IsQueueInitialized()}{IsQueueInitialized()}}
+{\footnotesize\ttfamily bool testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+For\+Models\+Structure\+Json.\+Is\+Queue\+Initialized (\begin{DoxyParamCaption}\item[{string}]{queue\+Name }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_a23daf5d75ae2cf4ba8a9b9f6cb6a0d9f}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+For\+Models\+Structure\+Json}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+testing\+Environment\+App/\+Services/\+Message\+Queue\+Service/\+Interfaces/\mbox{\hyperlink{_i_message_queue_for_models_structure_json_8cs}{IMessage\+Queue\+For\+Models\+Structure\+Json.\+cs}}\end{DoxyCompactItemize}

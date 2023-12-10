@@ -1,0 +1,13 @@
+<map id="testingEnvironmentApp.Services.Implementations.ObjectsInitializer" name="testingEnvironmentApp.Services.Implementations.ObjectsInitializer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="281,577,529,812"/>
+<area shape="rect" id="Node000002" href="$interfacetesting_environment_app_1_1_services_1_1_implementations_1_1_interfaces_1_1_i_objects_initializer.html" title=" " alt="" coords="5,273,169,385"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,398,146,456,184,512,231,561,283,606,279,610,227,565,180,515,142,458,112,400"/>
+<area shape="rect" id="Node000003" href="$interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory.html" title=" " alt="" coords="194,217,423,441"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="340,440,372,561,367,562,335,442"/>
+<area shape="rect" id="Node000004" href="$interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_for_json_fact3e645115c4956e2671f2d00e70725cff.html" title=" " alt="" coords="448,239,673,420"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="530,421,475,554,471,563,466,561,470,552,525,419"/>
+<area shape="rect" id="Node000005" href="$interfacetesting_environment_app_1_1_services_1_1_message_helper_1_1_interfaces_1_1_i_message_helper.html" title=" " alt="" coords="475,5,647,96"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="563,111,563,239,558,239,558,111"/>
+<area shape="rect" id="Node000006" href="$interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_for_json_facta1cbc61e88ec97538e9ed55de23ab2e8.html" title=" " alt="" coords="698,145,927,513"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="700,502,688,515,655,547,619,576,545,626,542,622,616,572,652,543,684,511,696,498"/>
+</map>

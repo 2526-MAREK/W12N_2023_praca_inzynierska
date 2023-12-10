@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['channelidentifier_0',['channelidentifier',['../classtesting_environment_app_1_1_models_1_1_alarms_1_1_alarm.html#ac90671626f2e173eef7d7edf5a1f7bce',1,'testingEnvironmentApp.Models.Alarms.Alarm.ChannelIdentifier'],['../classtesting_environment_app_1_1_models_1_1_channel.html#af25cdcdd9a60d0a6529ac2ed454756d6',1,'testingEnvironmentApp.Models.Channel.ChannelIdentifier']]],
+  ['channelishistorable_1',['channelishistorable',['../classtesting_environment_app_1_1_models_1_1_channel.html#a145a224c65065d150508e33628488b89',1,'testingEnvironmentApp.Models.Channel.ChannelIsHistorable'],['../interfacetesting_environment_app_1_1_models_1_1_interfaces_1_1_i_historable.html#aa490ccb6af305b3808f156e3d26eac45',1,'testingEnvironmentApp.Models.Interfaces.IHistorable.ChannelIsHistorable']]],
+  ['channels_2',['channels',['../classtesting_environment_app_1_1_data_1_1_application_db_context.html#a0133b837a42e9de5ef0f827da4c2b906',1,'testingEnvironmentApp.Data.ApplicationDbContext.Channels'],['../classtesting_environment_app_1_1_services_1_1_business_services_1_1_structured_device.html#ae16eb00d09f9101dd4df965449951df4',1,'testingEnvironmentApp.Services.BusinessServices.StructuredDevice.Channels']]]
+];

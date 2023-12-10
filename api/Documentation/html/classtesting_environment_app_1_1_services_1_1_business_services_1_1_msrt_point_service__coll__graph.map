@@ -1,0 +1,7 @@
+<map id="testingEnvironmentApp.Services.BusinessServices.MsrtPointService" name="testingEnvironmentApp.Services.BusinessServices.MsrtPointService">
+<area shape="rect" id="Node000001" title=" " alt="" coords="96,192,313,336"/>
+<area shape="rect" id="Node000002" href="$interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_msrt_point_service.html" title=" " alt="" coords="5,13,185,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,131,167,191,163,193,129,134"/>
+<area shape="rect" id="Node000003" href="$interfacetesting_environment_app_1_1_services_1_1_data_services_1_1_interfaces_1_1_i_msrt_point_data_service.html" title=" " alt="" coords="209,5,421,128"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="284,129,256,179,251,176,279,127"/>
+</map>

@@ -1,0 +1,81 @@
+\doxysection{testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Interfaces.\+IMqtt\+Message\+Publisher Interface Reference}
+\hypertarget{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_publisher}{}\label{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_publisher}\index{testingEnvironmentApp.Services.MqttService.Interfaces.IMqttMessagePublisher@{testingEnvironmentApp.Services.MqttService.Interfaces.IMqttMessagePublisher}}
+
+
+Inheritance diagram for testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Interfaces.\+IMqtt\+Message\+Publisher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_publisher__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Interfaces.\+IMqtt\+Message\+Publisher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_publisher__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_publisher_a5ae9d4f950daa022eab54cf72054d475}{Add\+Observer}} (\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_observer}{IMqtt\+Message\+Observer}} observer)
+\item 
+void \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_publisher_a37b67e1e8e68e6364f7e63ffa06f4a7a}{Remove\+Observer}} (\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_observer}{IMqtt\+Message\+Observer}} observer)
+\item 
+Task \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_publisher_aa8c844a7daff3c61cbead10f498cf6db}{Notify\+Observers\+Async}} (string topic, string message)
+\item 
+Task \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_publisher_ad50072354cf6df78720d7a789cfbf1f8}{New\+Message\+Received}} (string topic, string message)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_publisher_a5ae9d4f950daa022eab54cf72054d475}\label{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_publisher_a5ae9d4f950daa022eab54cf72054d475} 
+\index{testingEnvironmentApp.Services.MqttService.Interfaces.IMqttMessagePublisher@{testingEnvironmentApp.Services.MqttService.Interfaces.IMqttMessagePublisher}!AddObserver@{AddObserver}}
+\index{AddObserver@{AddObserver}!testingEnvironmentApp.Services.MqttService.Interfaces.IMqttMessagePublisher@{testingEnvironmentApp.Services.MqttService.Interfaces.IMqttMessagePublisher}}
+\doxysubsubsection{\texorpdfstring{AddObserver()}{AddObserver()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Interfaces.\+IMqtt\+Message\+Publisher.\+Add\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_observer}{IMqtt\+Message\+Observer}}}]{observer }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_message_publisher_a6839a54096242bdd2ef316ea13648d17}{testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Message\+Publisher}}.
+
+\Hypertarget{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_publisher_ad50072354cf6df78720d7a789cfbf1f8}\label{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_publisher_ad50072354cf6df78720d7a789cfbf1f8} 
+\index{testingEnvironmentApp.Services.MqttService.Interfaces.IMqttMessagePublisher@{testingEnvironmentApp.Services.MqttService.Interfaces.IMqttMessagePublisher}!NewMessageReceived@{NewMessageReceived}}
+\index{NewMessageReceived@{NewMessageReceived}!testingEnvironmentApp.Services.MqttService.Interfaces.IMqttMessagePublisher@{testingEnvironmentApp.Services.MqttService.Interfaces.IMqttMessagePublisher}}
+\doxysubsubsection{\texorpdfstring{NewMessageReceived()}{NewMessageReceived()}}
+{\footnotesize\ttfamily Task testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Interfaces.\+IMqtt\+Message\+Publisher.\+New\+Message\+Received (\begin{DoxyParamCaption}\item[{string}]{topic,  }\item[{string}]{message }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_message_publisher_a399a7e067a7d8b4de12cc551cf3d24c0}{testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Message\+Publisher}}.
+
+\Hypertarget{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_publisher_aa8c844a7daff3c61cbead10f498cf6db}\label{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_publisher_aa8c844a7daff3c61cbead10f498cf6db} 
+\index{testingEnvironmentApp.Services.MqttService.Interfaces.IMqttMessagePublisher@{testingEnvironmentApp.Services.MqttService.Interfaces.IMqttMessagePublisher}!NotifyObserversAsync@{NotifyObserversAsync}}
+\index{NotifyObserversAsync@{NotifyObserversAsync}!testingEnvironmentApp.Services.MqttService.Interfaces.IMqttMessagePublisher@{testingEnvironmentApp.Services.MqttService.Interfaces.IMqttMessagePublisher}}
+\doxysubsubsection{\texorpdfstring{NotifyObserversAsync()}{NotifyObserversAsync()}}
+{\footnotesize\ttfamily Task testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Interfaces.\+IMqtt\+Message\+Publisher.\+Notify\+Observers\+Async (\begin{DoxyParamCaption}\item[{string}]{topic,  }\item[{string}]{message }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_message_publisher_a179732f01726cd83758e808095488eca}{testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Message\+Publisher}}.
+
+\Hypertarget{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_publisher_a37b67e1e8e68e6364f7e63ffa06f4a7a}\label{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_publisher_a37b67e1e8e68e6364f7e63ffa06f4a7a} 
+\index{testingEnvironmentApp.Services.MqttService.Interfaces.IMqttMessagePublisher@{testingEnvironmentApp.Services.MqttService.Interfaces.IMqttMessagePublisher}!RemoveObserver@{RemoveObserver}}
+\index{RemoveObserver@{RemoveObserver}!testingEnvironmentApp.Services.MqttService.Interfaces.IMqttMessagePublisher@{testingEnvironmentApp.Services.MqttService.Interfaces.IMqttMessagePublisher}}
+\doxysubsubsection{\texorpdfstring{RemoveObserver()}{RemoveObserver()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Interfaces.\+IMqtt\+Message\+Publisher.\+Remove\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_mqtt_service_1_1_interfaces_1_1_i_mqtt_message_observer}{IMqtt\+Message\+Observer}}}]{observer }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_mqtt_service_1_1_mqtt_message_publisher_a1c863a55639f47cce78f3313f0d7dba2}{testing\+Environment\+App.\+Services.\+Mqtt\+Service.\+Mqtt\+Message\+Publisher}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+testing\+Environment\+App/\+Services/\+Mqtt\+Service/\+Interfaces/\mbox{\hyperlink{_i_mqtt_message_publisher_8cs}{IMqtt\+Message\+Publisher.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="testingEnvironmentApp.Services.BusinessServices.HubService" name="testingEnvironmentApp.Services.BusinessServices.HubService">
+<area shape="rect" id="Node000001" title=" " alt="" coords="116,213,319,379"/>
+<area shape="rect" id="Node000002" href="$interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_hub_service.html" title=" " alt="" coords="5,13,189,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,153,175,212,170,215,137,155"/>
+<area shape="rect" id="Node000003" href="$interfacetesting_environment_app_1_1_services_1_1_data_services_1_1_interfaces_1_1_i_hub_data_service.html" title=" " alt="" coords="213,5,461,149"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="301,150,273,200,268,197,296,148"/>
+</map>

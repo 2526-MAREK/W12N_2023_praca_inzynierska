@@ -1,0 +1,9 @@
+<map id="testingEnvironmentApp.Services.DataServices.ChannelDataService" name="testingEnvironmentApp.Services.DataServices.ChannelDataService">
+<area shape="rect" id="Node000001" title=" " alt="" coords="72,423,288,572"/>
+<area shape="rect" id="Node000002" href="$interfacetesting_environment_app_1_1_services_1_1_data_services_1_1_interfaces_1_1_i_channel_data_service.html" title=" " alt="" coords="5,185,221,297"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,311,163,422,158,424,129,312"/>
+<area shape="rect" id="Node000003" href="$classtesting_environment_app_1_1_data_1_1_application_db_context.html" title=" " alt="" coords="245,124,427,359"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="267,360,236,410,232,407,262,357"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="299,5,373,75"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="339,90,339,124,333,124,333,90"/>
+</map>

@@ -1,0 +1,132 @@
+\doxysection{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+For\+Models\+Structure\+Json Class Reference}
+\hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json}{}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json}\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson}}
+
+
+Inheritance diagram for testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+For\+Models\+Structure\+Json\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+For\+Models\+Structure\+Json\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_a6f506b5b8ac5e8998ca069fa080b31a6}{Message\+Queue\+For\+Models\+Structure\+Json}} ()
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_ac313858a7afd118cb2c99a213ccea090}{Initialize\+Queue}} ()
+\item 
+string \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_ac7f7125d142107ab37e5dab8127fe042}{Get\+Currently\+Selected\+Options}} ()
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_ad3b1ef12937694f086a714bab54f3697}{Change\+Currently\+Selected\+Options}} (string currently\+Selected\+Options\+Temp)
+\item 
+bool \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_a23daf5d75ae2cf4ba8a9b9f6cb6a0d9f}{Is\+Queue\+Initialized}} (string queue\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Blocking\+Collection$<$ string $>$ $>$ \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_a44fd3fcf17130cd3990e8e07707b9221}{Get\+Messages\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca listę kolekcji blokujących zawierających wiadomości. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_a457d2ab390484e35fbffaf5dc9be9b9a}{Enqueue\+Async}} (string queue\+Name, string message)
+\item 
+Task$<$ string $>$ \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_a31a3ecd384808084349d977dabb788c3}{Dequeue\+Async}} (string queue\+Name)
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_ac311f331ae1ce542eaeed83023fadf68}{Clear\+All\+Queues}} ()
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_abce222fe60f9883c5f9646e59c676e3d}{Clear\+Queue}} (string queue\+Name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_a5f042297fb79257b6aeab6a52c3a6718}{currently\+Selected\+Options}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_ae58fa991ee15f8efd760ed0b2ec981d8}{Message\+Queue\+Service}} (int max\+Queue\+Size)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy Message\+Queue\+Service z określonym maksymalnym rozmiarem kolejki. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+readonly Dictionary$<$ string, Blocking\+Collection$<$ string $>$ $>$ \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_ad7b7f1241d49dca1f56b7b5125c02cde}{\+\_\+message\+Queue}}
+\item 
+readonly int \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_a70b2c2daf88f5707c3412c1ae6617200}{Max\+Queue\+Size}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_a6f506b5b8ac5e8998ca069fa080b31a6}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_a6f506b5b8ac5e8998ca069fa080b31a6} 
+\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson}!MessageQueueForModelsStructureJson@{MessageQueueForModelsStructureJson}}
+\index{MessageQueueForModelsStructureJson@{MessageQueueForModelsStructureJson}!testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson}}
+\doxysubsubsection{\texorpdfstring{MessageQueueForModelsStructureJson()}{MessageQueueForModelsStructureJson()}}
+{\footnotesize\ttfamily testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+For\+Models\+Structure\+Json.\+Message\+Queue\+For\+Models\+Structure\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_ad3b1ef12937694f086a714bab54f3697}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_ad3b1ef12937694f086a714bab54f3697} 
+\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson}!ChangeCurrentlySelectedOptions@{ChangeCurrentlySelectedOptions}}
+\index{ChangeCurrentlySelectedOptions@{ChangeCurrentlySelectedOptions}!testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson}}
+\doxysubsubsection{\texorpdfstring{ChangeCurrentlySelectedOptions()}{ChangeCurrentlySelectedOptions()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+For\+Models\+Structure\+Json.\+Change\+Currently\+Selected\+Options (\begin{DoxyParamCaption}\item[{string}]{currently\+Selected\+Options\+Temp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f_a9d867f056211b546dcfe8a0607cf7b0a}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+For\+Models\+Structure\+Json}}.
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_ac7f7125d142107ab37e5dab8127fe042}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_ac7f7125d142107ab37e5dab8127fe042} 
+\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson}!GetCurrentlySelectedOptions@{GetCurrentlySelectedOptions}}
+\index{GetCurrentlySelectedOptions@{GetCurrentlySelectedOptions}!testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson}}
+\doxysubsubsection{\texorpdfstring{GetCurrentlySelectedOptions()}{GetCurrentlySelectedOptions()}}
+{\footnotesize\ttfamily string testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+For\+Models\+Structure\+Json.\+Get\+Currently\+Selected\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f_a1084d8c5d4df61d54307bf7bf0f18d99}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+For\+Models\+Structure\+Json}}.
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_ac313858a7afd118cb2c99a213ccea090}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_ac313858a7afd118cb2c99a213ccea090} 
+\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson}!InitializeQueue@{InitializeQueue}}
+\index{InitializeQueue@{InitializeQueue}!testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson}}
+\doxysubsubsection{\texorpdfstring{InitializeQueue()}{InitializeQueue()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+For\+Models\+Structure\+Json.\+Initialize\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f_ab6e1a0456507dfce73ff6540835b8d5c}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+For\+Models\+Structure\+Json}}.
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_a23daf5d75ae2cf4ba8a9b9f6cb6a0d9f}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_a23daf5d75ae2cf4ba8a9b9f6cb6a0d9f} 
+\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson}!IsQueueInitialized@{IsQueueInitialized}}
+\index{IsQueueInitialized@{IsQueueInitialized}!testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson}}
+\doxysubsubsection{\texorpdfstring{IsQueueInitialized()}{IsQueueInitialized()}}
+{\footnotesize\ttfamily bool testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+For\+Models\+Structure\+Json.\+Is\+Queue\+Initialized (\begin{DoxyParamCaption}\item[{string}]{queue\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f_a42a22142744402d9bffa5713d56b95d6}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+For\+Models\+Structure\+Json}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_a5f042297fb79257b6aeab6a52c3a6718}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json_a5f042297fb79257b6aeab6a52c3a6718} 
+\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson}!currentlySelectedOptions@{currentlySelectedOptions}}
+\index{currentlySelectedOptions@{currentlySelectedOptions}!testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForModelsStructureJson}}
+\doxysubsubsection{\texorpdfstring{currentlySelectedOptions}{currentlySelectedOptions}}
+{\footnotesize\ttfamily string testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+For\+Models\+Structure\+Json.\+currently\+Selected\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+testing\+Environment\+App/\+Services/\+Message\+Queue\+Service/\mbox{\hyperlink{_message_queue_for_models_structure_json_8cs}{Message\+Queue\+For\+Models\+Structure\+Json.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,122 @@
+\doxysection{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Value\+Device\+For\+Device\+Manager Class Reference}
+\hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_device_manager}{}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_device_manager}\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForDeviceManager@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForDeviceManager}}
+
+
+Implementacja Message\+Queue\+Service, specyficzna dla zarządzania urządzeniami.  
+
+
+
+
+Inheritance diagram for testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Value\+Device\+For\+Device\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_devi14cc30b22fbd8915841c64653323308e}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Value\+Device\+For\+Device\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_devi06028e71126814054b32f431353c29ae}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_device_manager_abb9d77d598617e1eb256f7e8ccd2f6ef}{Message\+Queue\+Value\+Device\+For\+Device\+Manager}} (\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory}{IChannel\+Factory}} channel\+Factory)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy Message\+Queue\+Value\+Device\+For\+Device\+Manager z określoną fabryką kanałów. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_device_manager_aa78fea2ec841ae13cfd885ce7d26d0c4}{Initialize\+Queue}} (List$<$ string $>$ topics)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje kolejki dla określonych tematów. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Blocking\+Collection$<$ string $>$ $>$ \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_a44fd3fcf17130cd3990e8e07707b9221}{Get\+Messages\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca listę kolekcji blokujących zawierających wiadomości. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_a457d2ab390484e35fbffaf5dc9be9b9a}{Enqueue\+Async}} (string queue\+Name, string message)
+\item 
+Task$<$ string $>$ \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_a31a3ecd384808084349d977dabb788c3}{Dequeue\+Async}} (string queue\+Name)
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_ac311f331ae1ce542eaeed83023fadf68}{Clear\+All\+Queues}} ()
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_abce222fe60f9883c5f9646e59c676e3d}{Clear\+Queue}} (string queue\+Name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory}{IChannel\+Factory}} \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_device_manager_a8dd729890bc943966ee412d45a16d510}{\+\_\+channel\+Factory}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_ae58fa991ee15f8efd760ed0b2ec981d8}{Message\+Queue\+Service}} (int max\+Queue\+Size)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy Message\+Queue\+Service z określonym maksymalnym rozmiarem kolejki. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+readonly Dictionary$<$ string, Blocking\+Collection$<$ string $>$ $>$ \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_ad7b7f1241d49dca1f56b7b5125c02cde}{\+\_\+message\+Queue}}
+\item 
+readonly int \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_a70b2c2daf88f5707c3412c1ae6617200}{Max\+Queue\+Size}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementacja Message\+Queue\+Service, specyficzna dla zarządzania urządzeniami. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_device_manager_abb9d77d598617e1eb256f7e8ccd2f6ef}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_device_manager_abb9d77d598617e1eb256f7e8ccd2f6ef} 
+\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForDeviceManager@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForDeviceManager}!MessageQueueValueDeviceForDeviceManager@{MessageQueueValueDeviceForDeviceManager}}
+\index{MessageQueueValueDeviceForDeviceManager@{MessageQueueValueDeviceForDeviceManager}!testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForDeviceManager@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForDeviceManager}}
+\doxysubsubsection{\texorpdfstring{MessageQueueValueDeviceForDeviceManager()}{MessageQueueValueDeviceForDeviceManager()}}
+{\footnotesize\ttfamily testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Value\+Device\+For\+Device\+Manager.\+Message\+Queue\+Value\+Device\+For\+Device\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory}{IChannel\+Factory}}}]{channel\+Factory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje nową instancję klasy Message\+Queue\+Value\+Device\+For\+Device\+Manager z określoną fabryką kanałów. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Factory} & Fabryka do tworzenia kanałów.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_device_manager_aa78fea2ec841ae13cfd885ce7d26d0c4}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_device_manager_aa78fea2ec841ae13cfd885ce7d26d0c4} 
+\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForDeviceManager@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForDeviceManager}!InitializeQueue@{InitializeQueue}}
+\index{InitializeQueue@{InitializeQueue}!testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForDeviceManager@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForDeviceManager}}
+\doxysubsubsection{\texorpdfstring{InitializeQueue()}{InitializeQueue()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Value\+Device\+For\+Device\+Manager.\+Initialize\+Queue (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{topics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicjalizuje kolejki dla określonych tematów. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em topics} & Tematy, dla których mają być zainicjalizowane kolejki.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221_aabf90425f26fbffbf2976e77e0bbf3a1}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+Value\+Device\+For\+Device\+Manager}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_device_manager_a8dd729890bc943966ee412d45a16d510}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_device_manager_a8dd729890bc943966ee412d45a16d510} 
+\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForDeviceManager@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForDeviceManager}!\_channelFactory@{\_channelFactory}}
+\index{\_channelFactory@{\_channelFactory}!testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForDeviceManager@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForDeviceManager}}
+\doxysubsubsection{\texorpdfstring{\_channelFactory}{\_channelFactory}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_channel_factory}{IChannel\+Factory}} testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Value\+Device\+For\+Device\+Manager.\+\_\+channel\+Factory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+testing\+Environment\+App/\+Services/\+Message\+Queue\+Service/\mbox{\hyperlink{_message_queue_value_device_for_device_manager_8cs}{Message\+Queue\+Value\+Device\+For\+Device\+Manager.\+cs}}\end{DoxyCompactItemize}

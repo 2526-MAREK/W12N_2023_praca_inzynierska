@@ -1,0 +1,82 @@
+\doxysection{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base Class Reference}
+\hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_msrt_save_to_data_base}{}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_msrt_save_to_data_base}\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForMsrtSaveToDataBase@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForMsrtSaveToDataBase}}
+
+
+Inheritance diagram for testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_msrt_sde2c8e4c975f4ece21953a4140c9640d}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_msrt_save_to_data_base__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_msrt_save_to_data_base_abe8df3ec3810211b2abe8b6909c156a0}{Message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base}} ()
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_msrt_save_to_data_base_ace5f72b804ba3c3f89cbd719a3d38487}{Initialize\+Queue}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Blocking\+Collection$<$ string $>$ $>$ \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_a44fd3fcf17130cd3990e8e07707b9221}{Get\+Messages\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca listę kolekcji blokujących zawierających wiadomości. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_a457d2ab390484e35fbffaf5dc9be9b9a}{Enqueue\+Async}} (string queue\+Name, string message)
+\item 
+Task$<$ string $>$ \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_a31a3ecd384808084349d977dabb788c3}{Dequeue\+Async}} (string queue\+Name)
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_ac311f331ae1ce542eaeed83023fadf68}{Clear\+All\+Queues}} ()
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_abce222fe60f9883c5f9646e59c676e3d}{Clear\+Queue}} (string queue\+Name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_ae58fa991ee15f8efd760ed0b2ec981d8}{Message\+Queue\+Service}} (int max\+Queue\+Size)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy Message\+Queue\+Service z określonym maksymalnym rozmiarem kolejki. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+readonly Dictionary$<$ string, Blocking\+Collection$<$ string $>$ $>$ \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_ad7b7f1241d49dca1f56b7b5125c02cde}{\+\_\+message\+Queue}}
+\item 
+readonly int \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_a70b2c2daf88f5707c3412c1ae6617200}{Max\+Queue\+Size}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_msrt_save_to_data_base_abe8df3ec3810211b2abe8b6909c156a0}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_msrt_save_to_data_base_abe8df3ec3810211b2abe8b6909c156a0} 
+\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForMsrtSaveToDataBase@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForMsrtSaveToDataBase}!MessageQueueForMsrtSaveToDataBase@{MessageQueueForMsrtSaveToDataBase}}
+\index{MessageQueueForMsrtSaveToDataBase@{MessageQueueForMsrtSaveToDataBase}!testingEnvironmentApp.Services.MessageQueueService.MessageQueueForMsrtSaveToDataBase@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForMsrtSaveToDataBase}}
+\doxysubsubsection{\texorpdfstring{MessageQueueForMsrtSaveToDataBase()}{MessageQueueForMsrtSaveToDataBase()}}
+{\footnotesize\ttfamily testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base.\+Message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_msrt_save_to_data_base_ace5f72b804ba3c3f89cbd719a3d38487}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_msrt_save_to_data_base_ace5f72b804ba3c3f89cbd719a3d38487} 
+\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForMsrtSaveToDataBase@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForMsrtSaveToDataBase}!InitializeQueue@{InitializeQueue}}
+\index{InitializeQueue@{InitializeQueue}!testingEnvironmentApp.Services.MessageQueueService.MessageQueueForMsrtSaveToDataBase@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueForMsrtSaveToDataBase}}
+\doxysubsubsection{\texorpdfstring{InitializeQueue()}{InitializeQueue()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base.\+Initialize\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mesb7e3cff71b64380c2f7bec947ecd8f26_a097e9dd68981dcc85f9d3d72126381e6}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+For\+Msrt\+Save\+To\+Data\+Base}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+testing\+Environment\+App/\+Services/\+Message\+Queue\+Service/\mbox{\hyperlink{_message_queue_for_msrt_save_to_data_base_8cs}{Message\+Queue\+For\+Msrt\+Save\+To\+Data\+Base.\+cs}}\end{DoxyCompactItemize}

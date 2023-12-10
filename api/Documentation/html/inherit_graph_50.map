@@ -1,0 +1,25 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_message_queue_service.html" title="Interfejs dla usługi kolejki wiadomości. Definiuje podstawowe operacje na kolejce,..." alt="" coords="5,163,280,221"/>
+<area shape="rect" id="Node000001" href="$interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f.html" title=" " alt="" coords="336,5,611,64"/>
+<area shape="poly" id="edge46_Node000000_Node000001" title=" " alt="" coords="195,151,256,111,327,74,355,62,357,67,329,78,259,116,198,156"/>
+<area shape="rect" id="Node000005" href="$interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mesb7e3cff71b64380c2f7bec947ecd8f26.html" title=" " alt="" coords="336,88,611,147"/>
+<area shape="poly" id="edge48_Node000000_Node000005" title=" " alt="" coords="289,156,340,145,341,150,291,161"/>
+<area shape="rect" id="Node000007" href="$interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes075ac11d5e46654fae227fd5961d0221.html" title="Interfejs dla usługi kolejki wiadomości, specyficznej dla zarządzania urządzeniami...." alt="" coords="336,237,611,296"/>
+<area shape="poly" id="edge50_Node000000_Node000007" title=" " alt="" coords="291,223,341,234,340,239,289,228"/>
+<area shape="rect" id="Node000009" href="$interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes8dbc3a2adaf867707d201e1f85e36179.html" title=" " alt="" coords="336,320,611,379"/>
+<area shape="poly" id="edge52_Node000000_Node000009" title=" " alt="" coords="198,228,259,268,329,306,357,317,355,322,327,310,256,273,195,233"/>
+<area shape="rect" id="Node000003" href="$classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service.html" title="Abstrakcyjna klasa bazowa dla usług kolejki wiadomości. Zapewnia podstawową implementację operacji na..." alt="" coords="328,171,619,213"/>
+<area shape="poly" id="edge54_Node000000_Node000003" title=" " alt="" coords="295,189,327,189,327,195,295,195"/>
+<area shape="rect" id="Node000002" href="$classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_models_structure_json.html" title=" " alt="" coords="674,15,942,73"/>
+<area shape="poly" id="edge47_Node000001_Node000002" title=" " alt="" coords="626,36,674,38,674,43,626,42"/>
+<area shape="rect" id="Node000004" href="$classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_for_msrt_save_to_data_base.html" title=" " alt="" coords="674,105,942,164"/>
+<area shape="poly" id="edge49_Node000005_Node000004" title=" " alt="" coords="626,123,674,125,674,130,626,128"/>
+<area shape="rect" id="Node000006" href="$classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_device_manager.html" title="Implementacja MessageQueueService, specyficzna dla zarządzania urządzeniami." alt="" coords="667,204,949,263"/>
+<area shape="poly" id="edge51_Node000007_Node000006" title=" " alt="" coords="626,249,666,245,667,250,626,254"/>
+<area shape="rect" id="Node000008" href="$classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device.html" title=" " alt="" coords="667,303,949,361"/>
+<area shape="poly" id="edge53_Node000009_Node000008" title=" " alt="" coords="626,339,667,337,667,342,626,344"/>
+<area shape="poly" id="edge55_Node000003_Node000002" title=" " alt="" coords="610,161,617,157,633,142,641,125,649,108,665,91,699,72,702,76,669,95,654,111,646,128,637,145,621,161,613,166"/>
+<area shape="poly" id="edge56_Node000003_Node000004" title=" " alt="" coords="616,165,673,155,674,160,617,170"/>
+<area shape="poly" id="edge57_Node000003_Node000006" title=" " alt="" coords="635,209,667,213,666,219,634,215"/>
+<area shape="poly" id="edge58_Node000003_Node000008" title=" " alt="" coords="610,218,620,223,636,235,646,248,655,260,669,272,719,300,717,304,665,277,651,264,641,251,632,239,618,228,607,222"/>
+</map>

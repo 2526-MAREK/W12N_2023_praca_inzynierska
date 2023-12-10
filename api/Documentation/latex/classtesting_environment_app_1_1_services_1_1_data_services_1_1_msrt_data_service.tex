@@ -1,0 +1,94 @@
+\doxysection{testing\+Environment\+App.\+Services.\+Data\+Services.\+Msrt\+Data\+Service Class Reference}
+\hypertarget{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service}{}\label{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service}\index{testingEnvironmentApp.Services.DataServices.MsrtDataService@{testingEnvironmentApp.Services.DataServices.MsrtDataService}}
+
+
+Inheritance diagram for testing\+Environment\+App.\+Services.\+Data\+Services.\+Msrt\+Data\+Service\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+Environment\+App.\+Services.\+Data\+Services.\+Msrt\+Data\+Service\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service_a5948cebcddf656077e1a0d75c2cf5436}{Msrt\+Data\+Service}} (\mbox{\hyperlink{classtesting_environment_app_1_1_data_1_1_application_db_context}{Application\+Db\+Context}} context)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service_af7f513564b96b65449fcbd212c2f7f84}{Add\+Msrt}} (\mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_msrt}{Msrt}} new\+Msrt)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service_abe4190d215a80cf334a35386bfcca638}{Add\+Measurement}} (string channel\+Identifier, double value)
+\item 
+async Task$<$ List$<$ \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_msrt}{Msrt}} $>$ $>$ \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service_ac24efc3f7e3ff24e7326bcc542aa9819}{Get\+Measurements\+By\+Channel\+And\+Date\+Range}} (string channel\+Identifier, Date\+Time start\+Date, Date\+Time end\+Date)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{classtesting_environment_app_1_1_data_1_1_application_db_context}{Application\+Db\+Context}} \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service_aeb4cbd08de32698f924335227202d8a3}{\+\_\+context}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service_a5948cebcddf656077e1a0d75c2cf5436}\label{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service_a5948cebcddf656077e1a0d75c2cf5436} 
+\index{testingEnvironmentApp.Services.DataServices.MsrtDataService@{testingEnvironmentApp.Services.DataServices.MsrtDataService}!MsrtDataService@{MsrtDataService}}
+\index{MsrtDataService@{MsrtDataService}!testingEnvironmentApp.Services.DataServices.MsrtDataService@{testingEnvironmentApp.Services.DataServices.MsrtDataService}}
+\doxysubsubsection{\texorpdfstring{MsrtDataService()}{MsrtDataService()}}
+{\footnotesize\ttfamily testing\+Environment\+App.\+Services.\+Data\+Services.\+Msrt\+Data\+Service.\+Msrt\+Data\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtesting_environment_app_1_1_data_1_1_application_db_context}{Application\+Db\+Context}}}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service_abe4190d215a80cf334a35386bfcca638}\label{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service_abe4190d215a80cf334a35386bfcca638} 
+\index{testingEnvironmentApp.Services.DataServices.MsrtDataService@{testingEnvironmentApp.Services.DataServices.MsrtDataService}!AddMeasurement@{AddMeasurement}}
+\index{AddMeasurement@{AddMeasurement}!testingEnvironmentApp.Services.DataServices.MsrtDataService@{testingEnvironmentApp.Services.DataServices.MsrtDataService}}
+\doxysubsubsection{\texorpdfstring{AddMeasurement()}{AddMeasurement()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Data\+Services.\+Msrt\+Data\+Service.\+Add\+Measurement (\begin{DoxyParamCaption}\item[{string}]{channel\+Identifier,  }\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_data_services_1_1_interfaces_1_1_i_msrt_data_service_ae9a1bfa9f063dc6cdcdfb82d8adc2bcc}{testing\+Environment\+App.\+Services.\+Data\+Services.\+Interfaces.\+IMsrt\+Data\+Service}}.
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service_af7f513564b96b65449fcbd212c2f7f84}\label{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service_af7f513564b96b65449fcbd212c2f7f84} 
+\index{testingEnvironmentApp.Services.DataServices.MsrtDataService@{testingEnvironmentApp.Services.DataServices.MsrtDataService}!AddMsrt@{AddMsrt}}
+\index{AddMsrt@{AddMsrt}!testingEnvironmentApp.Services.DataServices.MsrtDataService@{testingEnvironmentApp.Services.DataServices.MsrtDataService}}
+\doxysubsubsection{\texorpdfstring{AddMsrt()}{AddMsrt()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Data\+Services.\+Msrt\+Data\+Service.\+Add\+Msrt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_msrt}{Msrt}}}]{new\+Msrt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_data_services_1_1_interfaces_1_1_i_msrt_data_service_a720980df17851a93239c4e2894ae8ee6}{testing\+Environment\+App.\+Services.\+Data\+Services.\+Interfaces.\+IMsrt\+Data\+Service}}.
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service_ac24efc3f7e3ff24e7326bcc542aa9819}\label{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service_ac24efc3f7e3ff24e7326bcc542aa9819} 
+\index{testingEnvironmentApp.Services.DataServices.MsrtDataService@{testingEnvironmentApp.Services.DataServices.MsrtDataService}!GetMeasurementsByChannelAndDateRange@{GetMeasurementsByChannelAndDateRange}}
+\index{GetMeasurementsByChannelAndDateRange@{GetMeasurementsByChannelAndDateRange}!testingEnvironmentApp.Services.DataServices.MsrtDataService@{testingEnvironmentApp.Services.DataServices.MsrtDataService}}
+\doxysubsubsection{\texorpdfstring{GetMeasurementsByChannelAndDateRange()}{GetMeasurementsByChannelAndDateRange()}}
+{\footnotesize\ttfamily async Task$<$ List$<$ \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_msrt}{Msrt}} $>$ $>$ testing\+Environment\+App.\+Services.\+Data\+Services.\+Msrt\+Data\+Service.\+Get\+Measurements\+By\+Channel\+And\+Date\+Range (\begin{DoxyParamCaption}\item[{string}]{channel\+Identifier,  }\item[{Date\+Time}]{start\+Date,  }\item[{Date\+Time}]{end\+Date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_data_services_1_1_interfaces_1_1_i_msrt_data_service_ad8faf954521016aa40e3880c5e26f981}{testing\+Environment\+App.\+Services.\+Data\+Services.\+Interfaces.\+IMsrt\+Data\+Service}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service_aeb4cbd08de32698f924335227202d8a3}\label{classtesting_environment_app_1_1_services_1_1_data_services_1_1_msrt_data_service_aeb4cbd08de32698f924335227202d8a3} 
+\index{testingEnvironmentApp.Services.DataServices.MsrtDataService@{testingEnvironmentApp.Services.DataServices.MsrtDataService}!\_context@{\_context}}
+\index{\_context@{\_context}!testingEnvironmentApp.Services.DataServices.MsrtDataService@{testingEnvironmentApp.Services.DataServices.MsrtDataService}}
+\doxysubsubsection{\texorpdfstring{\_context}{\_context}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{classtesting_environment_app_1_1_data_1_1_application_db_context}{Application\+Db\+Context}} testing\+Environment\+App.\+Services.\+Data\+Services.\+Msrt\+Data\+Service.\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+testing\+Environment\+App/\+Services/\+Data\+Services/\mbox{\hyperlink{_msrt_data_service_8cs}{Msrt\+Data\+Service.\+cs}}\end{DoxyCompactItemize}

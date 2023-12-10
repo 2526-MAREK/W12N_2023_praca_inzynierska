@@ -1,0 +1,9 @@
+<map id="testingEnvironmentApp.Services.WebSocketService.WebSocketHandler" name="testingEnvironmentApp.Services.WebSocketService.WebSocketHandler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="213,187,452,315"/>
+<area shape="rect" id="Node000002" href="$interfacetesting_environment_app_1_1_services_1_1_web_socket_service_1_1_interfaces_1_1_i_web_socket_handler.html" title=" " alt="" coords="5,11,180,101"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,108,256,185,253,189,157,113"/>
+<area shape="rect" id="Node000003" href="$interfacetesting_environment_app_1_1_services_1_1_web_socket_service_1_1_interfaces_1_1_i_web_socket_message_handler.html" title=" " alt="" coords="204,5,461,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="335,106,335,170,330,170,330,106"/>
+<area shape="rect" id="Node000004" href="$interfacetesting_environment_app_1_1_services_1_1_web_socket_service_1_1_interfaces_1_1_i_web_so25b33e26567e049899e7bea6399edf7b.html" title=" " alt="" coords="485,5,743,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="576,108,548,138,516,165,468,194,466,190,512,161,544,134,573,104"/>
+</map>

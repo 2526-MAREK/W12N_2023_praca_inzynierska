@@ -1,0 +1,106 @@
+\doxysection{testing\+Environment\+App.\+Services.\+Business\+Services.\+Alarm\+Service Class Reference}
+\hypertarget{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service}{}\label{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service}\index{testingEnvironmentApp.Services.BusinessServices.AlarmService@{testingEnvironmentApp.Services.BusinessServices.AlarmService}}
+
+
+Inheritance diagram for testing\+Environment\+App.\+Services.\+Business\+Services.\+Alarm\+Service\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+Environment\+App.\+Services.\+Business\+Services.\+Alarm\+Service\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service_a2c117bfb48dcba50221afbb6b2eed1a2}{Alarm\+Service}} (\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_data_services_1_1_interfaces_1_1_i_alarm_data_service}{IAlarm\+Data\+Service}} alarm\+Data\+Service)
+\item 
+async Task$<$ List$<$ \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_alarms_1_1_alarm}{Alarm}} $>$ $>$ \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service_ae766fadceed39eba86d15ac637685195}{Get\+All\+Alarms\+From\+Data\+Base}} ()
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service_a8df0f49ba41e824ba5b4efb49d73b569}{Add\+Alarms\+To\+Data\+Base}} (string channel\+Identifier, ICollection$<$ \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_alarms_1_1_alarm}{Alarm}} $>$ alarms)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service_ab49bfda4b67eb8bf95436188e6b61994}{Add\+Alarm\+To\+Data\+Base}} (string channel\+Identifier, \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_alarms_1_1_alarm}{Alarm}} alarm)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service_a5fe93d3a98e27f390a68f604e5fb7c3e}{Find\+Bad\+Status\+Alarm\+And\+Change\+To\+Ok\+Status\+In\+Data\+Base}} (string channel\+Identifier, string message1, string message2)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_data_services_1_1_interfaces_1_1_i_alarm_data_service}{IAlarm\+Data\+Service}} \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service_aefb403c2257a802647e1a4a9671f1dd2}{\+\_\+alarm\+Data\+Service}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service_a2c117bfb48dcba50221afbb6b2eed1a2}\label{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service_a2c117bfb48dcba50221afbb6b2eed1a2} 
+\index{testingEnvironmentApp.Services.BusinessServices.AlarmService@{testingEnvironmentApp.Services.BusinessServices.AlarmService}!AlarmService@{AlarmService}}
+\index{AlarmService@{AlarmService}!testingEnvironmentApp.Services.BusinessServices.AlarmService@{testingEnvironmentApp.Services.BusinessServices.AlarmService}}
+\doxysubsubsection{\texorpdfstring{AlarmService()}{AlarmService()}}
+{\footnotesize\ttfamily testing\+Environment\+App.\+Services.\+Business\+Services.\+Alarm\+Service.\+Alarm\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_data_services_1_1_interfaces_1_1_i_alarm_data_service}{IAlarm\+Data\+Service}}}]{alarm\+Data\+Service }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service_a8df0f49ba41e824ba5b4efb49d73b569}\label{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service_a8df0f49ba41e824ba5b4efb49d73b569} 
+\index{testingEnvironmentApp.Services.BusinessServices.AlarmService@{testingEnvironmentApp.Services.BusinessServices.AlarmService}!AddAlarmsToDataBase@{AddAlarmsToDataBase}}
+\index{AddAlarmsToDataBase@{AddAlarmsToDataBase}!testingEnvironmentApp.Services.BusinessServices.AlarmService@{testingEnvironmentApp.Services.BusinessServices.AlarmService}}
+\doxysubsubsection{\texorpdfstring{AddAlarmsToDataBase()}{AddAlarmsToDataBase()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Business\+Services.\+Alarm\+Service.\+Add\+Alarms\+To\+Data\+Base (\begin{DoxyParamCaption}\item[{string}]{channel\+Identifier,  }\item[{ICollection$<$ \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_alarms_1_1_alarm}{Alarm}} $>$}]{alarms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_alarm_service_a5996f85978e63187dc1fbc618c511738}{testing\+Environment\+App.\+Services.\+Business\+Services.\+Interfaces.\+IAlarm\+Service}}.
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service_ab49bfda4b67eb8bf95436188e6b61994}\label{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service_ab49bfda4b67eb8bf95436188e6b61994} 
+\index{testingEnvironmentApp.Services.BusinessServices.AlarmService@{testingEnvironmentApp.Services.BusinessServices.AlarmService}!AddAlarmToDataBase@{AddAlarmToDataBase}}
+\index{AddAlarmToDataBase@{AddAlarmToDataBase}!testingEnvironmentApp.Services.BusinessServices.AlarmService@{testingEnvironmentApp.Services.BusinessServices.AlarmService}}
+\doxysubsubsection{\texorpdfstring{AddAlarmToDataBase()}{AddAlarmToDataBase()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Business\+Services.\+Alarm\+Service.\+Add\+Alarm\+To\+Data\+Base (\begin{DoxyParamCaption}\item[{string}]{channel\+Identifier,  }\item[{\mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_alarms_1_1_alarm}{Alarm}}}]{alarm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_alarm_service_aaf56e785b0536ace9a7a99152c2153fe}{testing\+Environment\+App.\+Services.\+Business\+Services.\+Interfaces.\+IAlarm\+Service}}.
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service_a5fe93d3a98e27f390a68f604e5fb7c3e}\label{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service_a5fe93d3a98e27f390a68f604e5fb7c3e} 
+\index{testingEnvironmentApp.Services.BusinessServices.AlarmService@{testingEnvironmentApp.Services.BusinessServices.AlarmService}!FindBadStatusAlarmAndChangeToOkStatusInDataBase@{FindBadStatusAlarmAndChangeToOkStatusInDataBase}}
+\index{FindBadStatusAlarmAndChangeToOkStatusInDataBase@{FindBadStatusAlarmAndChangeToOkStatusInDataBase}!testingEnvironmentApp.Services.BusinessServices.AlarmService@{testingEnvironmentApp.Services.BusinessServices.AlarmService}}
+\doxysubsubsection{\texorpdfstring{FindBadStatusAlarmAndChangeToOkStatusInDataBase()}{FindBadStatusAlarmAndChangeToOkStatusInDataBase()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Business\+Services.\+Alarm\+Service.\+Find\+Bad\+Status\+Alarm\+And\+Change\+To\+Ok\+Status\+In\+Data\+Base (\begin{DoxyParamCaption}\item[{string}]{channel\+Identifier,  }\item[{string}]{message1,  }\item[{string}]{message2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_alarm_service_a3700fd596bb183235642347d67bd318e}{testing\+Environment\+App.\+Services.\+Business\+Services.\+Interfaces.\+IAlarm\+Service}}.
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service_ae766fadceed39eba86d15ac637685195}\label{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service_ae766fadceed39eba86d15ac637685195} 
+\index{testingEnvironmentApp.Services.BusinessServices.AlarmService@{testingEnvironmentApp.Services.BusinessServices.AlarmService}!GetAllAlarmsFromDataBase@{GetAllAlarmsFromDataBase}}
+\index{GetAllAlarmsFromDataBase@{GetAllAlarmsFromDataBase}!testingEnvironmentApp.Services.BusinessServices.AlarmService@{testingEnvironmentApp.Services.BusinessServices.AlarmService}}
+\doxysubsubsection{\texorpdfstring{GetAllAlarmsFromDataBase()}{GetAllAlarmsFromDataBase()}}
+{\footnotesize\ttfamily async Task$<$ List$<$ \mbox{\hyperlink{classtesting_environment_app_1_1_models_1_1_alarms_1_1_alarm}{Alarm}} $>$ $>$ testing\+Environment\+App.\+Services.\+Business\+Services.\+Alarm\+Service.\+Get\+All\+Alarms\+From\+Data\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_business_services_1_1_interfaces_1_1_i_alarm_service_a61f0152628988bdcc4df08fb524b368e}{testing\+Environment\+App.\+Services.\+Business\+Services.\+Interfaces.\+IAlarm\+Service}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service_aefb403c2257a802647e1a4a9671f1dd2}\label{classtesting_environment_app_1_1_services_1_1_business_services_1_1_alarm_service_aefb403c2257a802647e1a4a9671f1dd2} 
+\index{testingEnvironmentApp.Services.BusinessServices.AlarmService@{testingEnvironmentApp.Services.BusinessServices.AlarmService}!\_alarmDataService@{\_alarmDataService}}
+\index{\_alarmDataService@{\_alarmDataService}!testingEnvironmentApp.Services.BusinessServices.AlarmService@{testingEnvironmentApp.Services.BusinessServices.AlarmService}}
+\doxysubsubsection{\texorpdfstring{\_alarmDataService}{\_alarmDataService}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_data_services_1_1_interfaces_1_1_i_alarm_data_service}{IAlarm\+Data\+Service}} testing\+Environment\+App.\+Services.\+Business\+Services.\+Alarm\+Service.\+\_\+alarm\+Data\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+testing\+Environment\+App/\+Services/\+Business\+Services/\mbox{\hyperlink{_alarm_service_8cs}{Alarm\+Service.\+cs}}\end{DoxyCompactItemize}

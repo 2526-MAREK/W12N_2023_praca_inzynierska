@@ -1,0 +1,120 @@
+\doxysection{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device Class Reference}
+\hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device}{}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device}\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice}}
+
+
+Inheritance diagram for testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_devi550b161c010adfd0b9acd9a23754a56e}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_devi4b0adea0825527c8068153028a203daf}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device_a4464897cf3b8c39f5363c597fcb87b97}{Message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device}} ()
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device_afb29b14f41ebe7c5c54c89e461eb9001}{Initialize\+Queue}} (List$<$ string $>$ topics)
+\item 
+string \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device_a1fecaa47235191b16dcbaec5542c4ce5}{Get\+Currently\+Selected\+System}} ()
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device_a10239d833351372878822007d9c00a21}{Change\+Currently\+Selected\+System}} (string currently\+Selected\+System\+Temp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Blocking\+Collection$<$ string $>$ $>$ \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_a44fd3fcf17130cd3990e8e07707b9221}{Get\+Messages\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca listę kolekcji blokujących zawierających wiadomości. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_a457d2ab390484e35fbffaf5dc9be9b9a}{Enqueue\+Async}} (string queue\+Name, string message)
+\item 
+Task$<$ string $>$ \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_a31a3ecd384808084349d977dabb788c3}{Dequeue\+Async}} (string queue\+Name)
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_ac311f331ae1ce542eaeed83023fadf68}{Clear\+All\+Queues}} ()
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_abce222fe60f9883c5f9646e59c676e3d}{Clear\+Queue}} (string queue\+Name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device_a5fb811f67110b5880781fb841ac35539}{currently\+Selected\+System}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_ae58fa991ee15f8efd760ed0b2ec981d8}{Message\+Queue\+Service}} (int max\+Queue\+Size)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy Message\+Queue\+Service z określonym maksymalnym rozmiarem kolejki. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+readonly Dictionary$<$ string, Blocking\+Collection$<$ string $>$ $>$ \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_ad7b7f1241d49dca1f56b7b5125c02cde}{\+\_\+message\+Queue}}
+\item 
+readonly int \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_service_a70b2c2daf88f5707c3412c1ae6617200}{Max\+Queue\+Size}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device_a4464897cf3b8c39f5363c597fcb87b97}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device_a4464897cf3b8c39f5363c597fcb87b97} 
+\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice}!MessageQueueValueDeviceForWebSocketDevice@{MessageQueueValueDeviceForWebSocketDevice}}
+\index{MessageQueueValueDeviceForWebSocketDevice@{MessageQueueValueDeviceForWebSocketDevice}!testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice}}
+\doxysubsubsection{\texorpdfstring{MessageQueueValueDeviceForWebSocketDevice()}{MessageQueueValueDeviceForWebSocketDevice()}}
+{\footnotesize\ttfamily testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device.\+Message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device_a10239d833351372878822007d9c00a21}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device_a10239d833351372878822007d9c00a21} 
+\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice}!ChangeCurrentlySelectedSystem@{ChangeCurrentlySelectedSystem}}
+\index{ChangeCurrentlySelectedSystem@{ChangeCurrentlySelectedSystem}!testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice}}
+\doxysubsubsection{\texorpdfstring{ChangeCurrentlySelectedSystem()}{ChangeCurrentlySelectedSystem()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device.\+Change\+Currently\+Selected\+System (\begin{DoxyParamCaption}\item[{string}]{currently\+Selected\+System\+Temp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes8dbc3a2adaf867707d201e1f85e36179_a25a11e55811a68076beb6c6bbc6ea722}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+Value\+Device\+For\+Web\+Socket\+Device}}.
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device_a1fecaa47235191b16dcbaec5542c4ce5}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device_a1fecaa47235191b16dcbaec5542c4ce5} 
+\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice}!GetCurrentlySelectedSystem@{GetCurrentlySelectedSystem}}
+\index{GetCurrentlySelectedSystem@{GetCurrentlySelectedSystem}!testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice}}
+\doxysubsubsection{\texorpdfstring{GetCurrentlySelectedSystem()}{GetCurrentlySelectedSystem()}}
+{\footnotesize\ttfamily string testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device.\+Get\+Currently\+Selected\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes8dbc3a2adaf867707d201e1f85e36179_a07f6fd38696fe6b957c7f3e266d1f8f0}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+Value\+Device\+For\+Web\+Socket\+Device}}.
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device_afb29b14f41ebe7c5c54c89e461eb9001}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device_afb29b14f41ebe7c5c54c89e461eb9001} 
+\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice}!InitializeQueue@{InitializeQueue}}
+\index{InitializeQueue@{InitializeQueue}!testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice}}
+\doxysubsubsection{\texorpdfstring{InitializeQueue()}{InitializeQueue()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device.\+Initialize\+Queue (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{topics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes8dbc3a2adaf867707d201e1f85e36179_a80699e04c321b1c0034bd461bc29e5a7}{testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Interfaces.\+IMessage\+Queue\+Value\+Device\+For\+Web\+Socket\+Device}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device_a5fb811f67110b5880781fb841ac35539}\label{classtesting_environment_app_1_1_services_1_1_message_queue_service_1_1_message_queue_value_device_for_web_socket_device_a5fb811f67110b5880781fb841ac35539} 
+\index{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice}!currentlySelectedSystem@{currentlySelectedSystem}}
+\index{currentlySelectedSystem@{currentlySelectedSystem}!testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice@{testingEnvironmentApp.Services.MessageQueueService.MessageQueueValueDeviceForWebSocketDevice}}
+\doxysubsubsection{\texorpdfstring{currentlySelectedSystem}{currentlySelectedSystem}}
+{\footnotesize\ttfamily string testing\+Environment\+App.\+Services.\+Message\+Queue\+Service.\+Message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device.\+currently\+Selected\+System\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+testing\+Environment\+App/\+Services/\+Message\+Queue\+Service/\mbox{\hyperlink{_message_queue_value_device_for_web_socket_device_8cs}{Message\+Queue\+Value\+Device\+For\+Web\+Socket\+Device.\+cs}}\end{DoxyCompactItemize}

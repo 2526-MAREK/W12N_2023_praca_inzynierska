@@ -1,0 +1,145 @@
+\doxysection{testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Models\+Json\+Structure\+Handler Class Reference}
+\hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler}{}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler}\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}}
+
+
+Inheritance diagram for testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Models\+Json\+Structure\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_j2d39025e64025d6f2f58d13c6f6ccd9c}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Models\+Json\+Structure\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_j6f33b88e73ccb57ba6d7234454d70318}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_af763b02107361e30753dec058596d505}{Web\+Socket\+Message\+Models\+Json\+Structure\+Handler}} (\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f}{IMessage\+Queue\+For\+Models\+Structure\+Json}} message\+Queue\+For\+Models\+Structure\+Json, \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_managers_1_1_interfaces_1_1_i_models_structure_json_manager}{IModels\+Structure\+Json\+Manager}} models\+Structure\+Json\+Manager)
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a0e6907e2e30d3c60e5d0cf1703af9294}{Start\+Task}} (Web\+Socket web\+Socket)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a655f4d3fb39799e08b29f2848cc59c76}{Handle\+Message\+Async}} (Web\+Socket web\+Socket)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a4dbff700392b2ca61b145040f4550569}{Change\+Currently\+Selected\+Options}} (string name\+Of\+Options)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a1b7853f780e7c19f8855175c06967c5f}{Receive\+Messages\+Async}} (Web\+Socket web\+Socket)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a9bac33e311f85162a657f6b12a42a770}{Process\+And\+Send\+Data\+Async}} (Web\+Socket web\+Socket, Cancellation\+Token cancellation\+Token)
+\item 
+async Task \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_aa0d9a8f3ffa6681af2bdda724a2c0c60}{Send\+Message\+Async}} (Web\+Socket web\+Socket, string message1)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f}{IMessage\+Queue\+For\+Models\+Structure\+Json}} \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a27611f28db92bd35b9e05fcdf9290c02}{\+\_\+message\+Queue\+For\+Models\+Structure\+Json}}
+\item 
+readonly \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_managers_1_1_interfaces_1_1_i_models_structure_json_manager}{IModels\+Structure\+Json\+Manager}} \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a8225dad1037b5fa967e56ebae32fd4f2}{\+\_\+models\+Structure\+Json\+Manager}}
+\item 
+Cancellation\+Token\+Source \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a5e5a585b96478ce15bc6350b011f7d70}{\+\_\+cts\+To\+Process\+And\+Send\+Data\+Async}}
+\item 
+Cancellation\+Token\+Source \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a58c36fc8c48439c5c8145c6bfae486b7}{\+\_\+cts\+To\+Receive\+Messages\+Async}}
+\item 
+readonly object \mbox{\hyperlink{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_ac2fca98ad81d201f57d51419bd37b9f8}{\+\_\+change\+Message\+Queue\+Lock}} = new object()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_af763b02107361e30753dec058596d505}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_af763b02107361e30753dec058596d505} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}!WebSocketMessageModelsJsonStructureHandler@{WebSocketMessageModelsJsonStructureHandler}}
+\index{WebSocketMessageModelsJsonStructureHandler@{WebSocketMessageModelsJsonStructureHandler}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}}
+\doxysubsubsection{\texorpdfstring{WebSocketMessageModelsJsonStructureHandler()}{WebSocketMessageModelsJsonStructureHandler()}}
+{\footnotesize\ttfamily testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Models\+Json\+Structure\+Handler.\+Web\+Socket\+Message\+Models\+Json\+Structure\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f}{IMessage\+Queue\+For\+Models\+Structure\+Json}}}]{message\+Queue\+For\+Models\+Structure\+Json,  }\item[{\mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_managers_1_1_interfaces_1_1_i_models_structure_json_manager}{IModels\+Structure\+Json\+Manager}}}]{models\+Structure\+Json\+Manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a4dbff700392b2ca61b145040f4550569}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a4dbff700392b2ca61b145040f4550569} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}!ChangeCurrentlySelectedOptions@{ChangeCurrentlySelectedOptions}}
+\index{ChangeCurrentlySelectedOptions@{ChangeCurrentlySelectedOptions}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}}
+\doxysubsubsection{\texorpdfstring{ChangeCurrentlySelectedOptions()}{ChangeCurrentlySelectedOptions()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Models\+Json\+Structure\+Handler.\+Change\+Currently\+Selected\+Options (\begin{DoxyParamCaption}\item[{string}]{name\+Of\+Options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a655f4d3fb39799e08b29f2848cc59c76}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a655f4d3fb39799e08b29f2848cc59c76} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}!HandleMessageAsync@{HandleMessageAsync}}
+\index{HandleMessageAsync@{HandleMessageAsync}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}}
+\doxysubsubsection{\texorpdfstring{HandleMessageAsync()}{HandleMessageAsync()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Models\+Json\+Structure\+Handler.\+Handle\+Message\+Async (\begin{DoxyParamCaption}\item[{Web\+Socket}]{web\+Socket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_web_socket_service_1_1_interfaces_1_1_i_web_so25b33e26567e049899e7bea6399edf7b_a391d47063dccc1ac8d7bf270c2059314}{testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Interfaces.\+IWeb\+Socket\+Message\+Models\+Json\+Structure\+Handler}}.
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a9bac33e311f85162a657f6b12a42a770}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a9bac33e311f85162a657f6b12a42a770} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}!ProcessAndSendDataAsync@{ProcessAndSendDataAsync}}
+\index{ProcessAndSendDataAsync@{ProcessAndSendDataAsync}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}}
+\doxysubsubsection{\texorpdfstring{ProcessAndSendDataAsync()}{ProcessAndSendDataAsync()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Models\+Json\+Structure\+Handler.\+Process\+And\+Send\+Data\+Async (\begin{DoxyParamCaption}\item[{Web\+Socket}]{web\+Socket,  }\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a1b7853f780e7c19f8855175c06967c5f}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a1b7853f780e7c19f8855175c06967c5f} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}!ReceiveMessagesAsync@{ReceiveMessagesAsync}}
+\index{ReceiveMessagesAsync@{ReceiveMessagesAsync}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}}
+\doxysubsubsection{\texorpdfstring{ReceiveMessagesAsync()}{ReceiveMessagesAsync()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Models\+Json\+Structure\+Handler.\+Receive\+Messages\+Async (\begin{DoxyParamCaption}\item[{Web\+Socket}]{web\+Socket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_aa0d9a8f3ffa6681af2bdda724a2c0c60}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_aa0d9a8f3ffa6681af2bdda724a2c0c60} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}!SendMessageAsync@{SendMessageAsync}}
+\index{SendMessageAsync@{SendMessageAsync}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}}
+\doxysubsubsection{\texorpdfstring{SendMessageAsync()}{SendMessageAsync()}}
+{\footnotesize\ttfamily async Task testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Models\+Json\+Structure\+Handler.\+Send\+Message\+Async (\begin{DoxyParamCaption}\item[{Web\+Socket}]{web\+Socket,  }\item[{string}]{message1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a0e6907e2e30d3c60e5d0cf1703af9294}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a0e6907e2e30d3c60e5d0cf1703af9294} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}!StartTask@{StartTask}}
+\index{StartTask@{StartTask}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}}
+\doxysubsubsection{\texorpdfstring{StartTask()}{StartTask()}}
+{\footnotesize\ttfamily void testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Models\+Json\+Structure\+Handler.\+Start\+Task (\begin{DoxyParamCaption}\item[{Web\+Socket}]{web\+Socket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_ac2fca98ad81d201f57d51419bd37b9f8}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_ac2fca98ad81d201f57d51419bd37b9f8} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}!\_changeMessageQueueLock@{\_changeMessageQueueLock}}
+\index{\_changeMessageQueueLock@{\_changeMessageQueueLock}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}}
+\doxysubsubsection{\texorpdfstring{\_changeMessageQueueLock}{\_changeMessageQueueLock}}
+{\footnotesize\ttfamily readonly object testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Models\+Json\+Structure\+Handler.\+\_\+change\+Message\+Queue\+Lock = new object()\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a5e5a585b96478ce15bc6350b011f7d70}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a5e5a585b96478ce15bc6350b011f7d70} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}!\_ctsToProcessAndSendDataAsync@{\_ctsToProcessAndSendDataAsync}}
+\index{\_ctsToProcessAndSendDataAsync@{\_ctsToProcessAndSendDataAsync}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}}
+\doxysubsubsection{\texorpdfstring{\_ctsToProcessAndSendDataAsync}{\_ctsToProcessAndSendDataAsync}}
+{\footnotesize\ttfamily Cancellation\+Token\+Source testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Models\+Json\+Structure\+Handler.\+\_\+cts\+To\+Process\+And\+Send\+Data\+Async\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a58c36fc8c48439c5c8145c6bfae486b7}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a58c36fc8c48439c5c8145c6bfae486b7} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}!\_ctsToReceiveMessagesAsync@{\_ctsToReceiveMessagesAsync}}
+\index{\_ctsToReceiveMessagesAsync@{\_ctsToReceiveMessagesAsync}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}}
+\doxysubsubsection{\texorpdfstring{\_ctsToReceiveMessagesAsync}{\_ctsToReceiveMessagesAsync}}
+{\footnotesize\ttfamily Cancellation\+Token\+Source testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Models\+Json\+Structure\+Handler.\+\_\+cts\+To\+Receive\+Messages\+Async\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a27611f28db92bd35b9e05fcdf9290c02}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a27611f28db92bd35b9e05fcdf9290c02} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}!\_messageQueueForModelsStructureJson@{\_messageQueueForModelsStructureJson}}
+\index{\_messageQueueForModelsStructureJson@{\_messageQueueForModelsStructureJson}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}}
+\doxysubsubsection{\texorpdfstring{\_messageQueueForModelsStructureJson}{\_messageQueueForModelsStructureJson}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_message_queue_service_1_1_interfaces_1_1_i_mes2f619f77a9f584e1d298e2626467fd8f}{IMessage\+Queue\+For\+Models\+Structure\+Json}} testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Models\+Json\+Structure\+Handler.\+\_\+message\+Queue\+For\+Models\+Structure\+Json\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a8225dad1037b5fa967e56ebae32fd4f2}\label{classtesting_environment_app_1_1_services_1_1_web_socket_service_1_1_web_socket_message_models_json_structure_handler_a8225dad1037b5fa967e56ebae32fd4f2} 
+\index{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}!\_modelsStructureJsonManager@{\_modelsStructureJsonManager}}
+\index{\_modelsStructureJsonManager@{\_modelsStructureJsonManager}!testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler@{testingEnvironmentApp.Services.WebSocketService.WebSocketMessageModelsJsonStructureHandler}}
+\doxysubsubsection{\texorpdfstring{\_modelsStructureJsonManager}{\_modelsStructureJsonManager}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{interfacetesting_environment_app_1_1_services_1_1_managers_1_1_interfaces_1_1_i_models_structure_json_manager}{IModels\+Structure\+Json\+Manager}} testing\+Environment\+App.\+Services.\+Web\+Socket\+Service.\+Web\+Socket\+Message\+Models\+Json\+Structure\+Handler.\+\_\+models\+Structure\+Json\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+testing\+Environment\+App/\+Services/\+Web\+Socket\+Service/\mbox{\hyperlink{_web_socket_message_models_json_structure_handler_8cs}{Web\+Socket\+Message\+Models\+Json\+Structure\+Handler.\+cs}}\end{DoxyCompactItemize}
