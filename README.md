@@ -1,1 +1,1 @@
-[W12N_259227_W12-AIR-INZ_W12-AIRP-000P-OSIW7.pdf](https://github.com/2526-MAREK/W12N_2023_praca_inzynierska/files/13850246/W12N_259227_W12-AIR-INZ_W12-AIRP-000P-OSIW7.pdf)
+Documentation of this system: [W12N_259227_W12-AIR-INZ_W12-AIRP-000P-OSIW7.pdf](https://github.com/2526-MAREK/W12N_2023_praca_inzynierska/files/13850246/W12N_259227_W12-AIR-INZ_W12-AIRP-000P-OSIW7.pdf)
